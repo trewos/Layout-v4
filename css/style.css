@@ -123,14 +123,13 @@ h6 {
 }
 
 .header__container {
-  max-width: min(1250px, 100%);
+  max-width: min(1220px, 100%);
   margin: 0 auto;
 }
 .header__container .header__block {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px;
 }
 
 .header__logo {
@@ -311,6 +310,7 @@ h6 {
 .slider {
   width: 100%;
   padding-top: 70px;
+  margin-bottom: 86px;
 }
 .slider__container {
   max-width: min(1250px, 100%);
@@ -378,6 +378,65 @@ h6 {
   background-color: #666666;
 }
 
+.statistic {
+  padding: 65px 0;
+  width: 100%;
+  background-color: #3498db;
+}
+
+.statistic__container {
+  max-width: min(1250px, 100%);
+  margin: 0 auto;
+}
+.statistic__container .statistic__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+.statistic__container .statistic__info img {
+  width: 85px;
+  height: 60px;
+}
+.statistic__container .statistic__info h2 {
+  font: bold 28px "Open Sans", sans-serif;
+  color: #ffffff;
+  margin: 20px 0 10px 0;
+}
+.statistic__container .statistic__info p {
+  font: 16px "Open Sans", sans-serif;
+  color: #ffffff;
+}
+.statistic__container .statistic__info-1 {
+  margin: 0 26px 0 58px;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.statistic__container .statistic__info-2 {
+  margin: 0 24px 0 40px;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.statistic__container .statistic__info-3 {
+  margin: 0 24px 0 50px;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.statistic__container .statistic__info-4 {
+  margin: 0 -10px 0 0;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media (max-width: 1440px) {
   .header__container {
     max-width: min(1250px, 100%);
@@ -418,6 +477,35 @@ h6 {
     color: #c3c3c3;
     line-height: 26px;
     padding: 0 30px;
+  }
+  .statistic {
+    padding: 45px 0;
+  }
+  .statistic__container {
+    max-width: min(992px, 100%);
+  }
+  .statistic__container .statistic__info img {
+    width: 85px;
+    height: 60px;
+  }
+  .statistic__container .statistic__info h2 {
+    font: bold 22px "Open Sans", sans-serif;
+    margin: 14px 0 6px 0;
+  }
+  .statistic__container .statistic__info p {
+    font: 14px "Open Sans", sans-serif;
+  }
+  .statistic__container .statistic__info-1 {
+    margin: 0 -8px 0 68px;
+  }
+  .statistic__container .statistic__info-2 {
+    margin: 0 0 0 19px;
+  }
+  .statistic__container .statistic__info-3 {
+    margin: 0 -17px 0 24px;
+  }
+  .statistic__container .statistic__info-4 {
+    margin: 0 -5px 0 0;
   }
   .register__info {
     margin: -1.5em 0 0 -1.2em;
@@ -462,6 +550,32 @@ h6 {
   }
   .content {
     margin-top: 84px;
+  }
+  .content .statistic__container {
+    max-width: min(792px, 100%);
+  }
+  .content .statistic__container .statistic__info img {
+    width: 85px;
+    height: 60px;
+  }
+  .content .statistic__container .statistic__info h2 {
+    font: bold 18px "Open Sans", sans-serif;
+    margin: 14px 0 6px 0;
+  }
+  .content .statistic__container .statistic__info p {
+    font: 12px "Open Sans", sans-serif;
+  }
+  .content .statistic__container .statistic__info-1 {
+    margin: 6px 0 13px;
+  }
+  .content .statistic__container .statistic__info-2 {
+    margin: 0 6px 0 9px;
+  }
+  .content .statistic__container .statistic__info-3 {
+    margin: 0 6px 0 11px;
+  }
+  .content .statistic__container .statistic__info-4 {
+    margin: 0 -5px 0 0;
   }
   .content .slider {
     padding-top: 40px;
@@ -682,8 +796,46 @@ h6 {
   .header__container {
     max-width: 320px;
   }
+  .content .statistic {
+    padding: 30px 0;
+  }
+  .content .statistic__container {
+    max-width: 320px;
+  }
+  .content .statistic__container .statistic__info {
+    justify-content: center;
+  }
+  .content .statistic__container .statistic__info img {
+    width: 85px;
+    height: 60px;
+  }
+  .content .statistic__container .statistic__info h2 {
+    font: bold 16px "Open Sans", sans-serif;
+    margin: 6px 0 6px 0;
+  }
+  .content .statistic__container .statistic__info p {
+    font: 12px "Open Sans", sans-serif;
+  }
+  .content .statistic__container .statistic__info-1 {
+    padding: 10px 7px;
+    margin: 0;
+  }
+  .content .statistic__container .statistic__info-2 {
+    padding: 10px 7px;
+    margin: 0;
+  }
+  .content .statistic__container .statistic__info-3 {
+    padding: 10px 7px;
+    margin: 0;
+  }
+  .content .statistic__container .statistic__info-4 {
+    text-align: center;
+    width: 150px;
+    padding: 10px 7px 10px 10px;
+  }
   .content .slider {
     padding-top: 68px;
+    margin-bottom: 30px;
   }
   .content .slider .slider__container {
     max-width: 320px;
