@@ -121,53 +121,49 @@ h6 {
   background-color: #ffffff;
   z-index: 15;
 }
-
 .header__container {
-  max-width: min(1220px, 100%);
+  max-width: min(1250px, 100%);
   margin: 0 auto;
 }
 .header__container .header__block {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 15px;
 }
-
-.header__logo {
+.header__container .header__block .header__logo {
   margin: 10px auto 10px 0;
   z-index: 20;
 }
-
-.header__menu {
+.header__container .header__block .header__menu {
   z-index: 20;
 }
-.header__menu .header__menu-list {
+.header__container .header__block .header__menu .header__menu-list {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 40px 0 41px auto;
 }
-.header__menu .header__menu-list .header__menu-list-item {
+.header__container .header__block .header__menu .header__menu-list .header__menu-list-item {
   text-align: center;
   font: 14px "Open Sans", sans-serif;
-  letter-spacing: 0.0222em;
+  letter-spacing: 0.0235em;
 }
-
-.header__menu-list-link {
+.header__container .header__block .header__menu .header__menu-list .header__menu-list-item .header__menu-list-link {
   color: black;
   padding: 10px 20px;
 }
-.header__menu-list-link:hover {
+.header__container .header__block .header__menu .header__menu-list .header__menu-list-item .header__menu-list-link:hover {
   background-color: #eeeeee;
   color: #337ab7;
 }
-
-.header__menu-list-link-application {
+.header__container .header__block .header__menu .header__menu-list .header__menu-list-item .header__menu-list-link.header__menu-list-link-application {
   background-color: #337ab7;
   color: #ffffff;
   border-radius: 50px;
   font-weight: bold;
 }
-.header__menu-list-link-application:hover {
+.header__container .header__block .header__menu .header__menu-list .header__menu-list-item .header__menu-list-link.header__menu-list-link-application:hover {
   background-color: #3498db;
   color: #ffffff;
 }
@@ -181,6 +177,9 @@ h6 {
   width: 100%;
   padding-top: 55px;
   background-color: #f7f7f7;
+  /* Content Left */
+  /* Registration Form */
+  /* Submit Button */
 }
 .register__container {
   max-width: min(1250px, 100%);
@@ -192,17 +191,15 @@ h6 {
   align-items: center;
   padding: 0 15px;
 }
-
-/* Content Left */
 .register__info {
-  margin: 0.7em 0 0 -1.4em;
+  margin: 2.3em 0 0 -1.4em;
   text-align: center;
   padding: 0 20px;
 }
 .register__info-h {
   font: bold 33px "Open Sans", sans-serif;
-  line-height: 2.8em;
-  letter-spacing: 0.072em;
+  letter-spacing: 0.07em;
+  margin-bottom: 26px;
 }
 .register__info-p {
   font: 16px "Open Sans", sans-serif;
@@ -211,17 +208,17 @@ h6 {
   text-align: center;
   padding: 0 3.5em;
 }
-
-/* Registration Form */
 .register__form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-top: -2px;
+  /* Checkbox Setting's */
 }
 .register__form-h {
   font: bold 20px "Open Sans", sans-serif;
   letter-spacing: 0.1em;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 .register__form .register__label {
   display: flex;
@@ -242,7 +239,11 @@ h6 {
   flex-direction: column;
   font: 16px "Open Sans", sans-serif;
 }
-.register__form-input #register__choise, .register__form-input #register__email, .register__form-input #register__lastname, .register__form-input #register__name, .register__form-input #register__phone {
+.register__form-input #register__choise,
+.register__form-input #register__email,
+.register__form-input #register__lastname,
+.register__form-input #register__name,
+.register__form-input #register__phone {
   width: 590px;
   height: 52px;
   border: 1px solid #c3c3c3;
@@ -251,23 +252,29 @@ h6 {
   margin: 2px 0 10px 0;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25) inset;
 }
-.register__form-input #register__choise:focus, .register__form-input #register__email:focus, .register__form-input #register__lastname:focus, .register__form-input #register__name:focus, .register__form-input #register__phone:focus {
+.register__form-input #register__choise:focus,
+.register__form-input #register__email:focus,
+.register__form-input #register__lastname:focus,
+.register__form-input #register__name:focus,
+.register__form-input #register__phone:focus {
   box-shadow: 0 0 5px rgba(0, 0, 255, 0.25);
 }
 .register__form-input #register__choise:focus::-moz-placeholder, .register__form-input #register__email:focus::-moz-placeholder, .register__form-input #register__lastname:focus::-moz-placeholder, .register__form-input #register__name:focus::-moz-placeholder, .register__form-input #register__phone:focus::-moz-placeholder {
   color: transparent;
   letter-spacing: 1px;
 }
-.register__form-input #register__choise:focus::placeholder, .register__form-input #register__email:focus::placeholder, .register__form-input #register__lastname:focus::placeholder, .register__form-input #register__name:focus::placeholder, .register__form-input #register__phone:focus::placeholder {
+.register__form-input #register__choise:focus::placeholder,
+.register__form-input #register__email:focus::placeholder,
+.register__form-input #register__lastname:focus::placeholder,
+.register__form-input #register__name:focus::placeholder,
+.register__form-input #register__phone:focus::placeholder {
   color: transparent;
   letter-spacing: 1px;
 }
-
-/* Checkbox Setting`s */
 .register__form-application {
   display: inline-flex;
   align-items: center;
-  margin: 10px 0 32px 0;
+  margin: 10px 0 36px 0;
 }
 .register__form-application #register__checkbox {
   width: 13px;
@@ -289,9 +296,7 @@ h6 {
   color: red;
   margin-left: 8px;
 }
-
-/* Submit Button */
-#register__submit {
+.register #register__submit {
   margin: 0 auto 30px auto;
   width: 370px;
   height: 52px;
@@ -303,7 +308,7 @@ h6 {
   text-transform: uppercase;
   cursor: pointer;
 }
-#register__submit:hover {
+.register #register__submit:hover {
   background-color: #3498db;
 }
 
@@ -535,17 +540,17 @@ h6 {
   .header__container {
     max-width: min(792px, 100%);
   }
-  .header__logo {
+  .header__container .header__block .header__logo {
     margin: 7px auto 7px 0;
   }
-  .header__logo img {
+  .header__container .header__block .header__logo img {
     width: 70px;
     height: 70px;
   }
-  .header__menu .header__menu-list {
+  .header__container .header__block .header__menu .header__menu-list {
     margin: 32px 0 33px auto;
   }
-  .header__menu .header__menu-list .header__menu-list-link {
+  .header__container .header__block .header__menu .header__menu-list .header__menu-list-item .header__menu-list-link {
     padding: 10px 15px;
   }
   .content {
@@ -629,48 +634,48 @@ h6 {
   .header__container {
     max-width: min(697px, 100%);
   }
-  .header__logo {
+  .header__container .header__block .header__logo {
     margin: 5px auto 5px 0;
   }
-  .header__logo img {
+  .header__container .header__block .header__logo img {
     width: 60px;
     height: 60px;
   }
-  .header__burger {
+  .header__container .header__block .header__burger {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
+    width: 44px;
     height: 30px;
     border-radius: 4px;
     background-color: #337ab7;
     z-index: 20;
     margin: 20px 0 20px auto;
   }
-  .header__burger:hover {
-    background-color: #3498db;
-  }
-  .header__burger-toggle {
+  .header__container .header__block .header__burger .header__burger-toggle {
     display: block;
     position: relative;
     height: 2px;
-    width: 25px;
+    width: 26px;
     background-color: #ffffff;
   }
-  .header__burger-toggle::after, .header__burger-toggle::before {
+  .header__container .header__block .header__burger .header__burger-toggle::after, .header__container .header__block .header__burger .header__burger-toggle::before {
     content: "";
     position: absolute;
     height: 2px;
-    width: 25px;
+    width: 26px;
     background-color: #ffffff;
   }
-  .header__burger-toggle::after {
+  .header__container .header__block .header__burger .header__burger-toggle::after {
     bottom: 6px;
   }
-  .header__burger-toggle::before {
+  .header__container .header__block .header__burger .header__burger-toggle::before {
     top: 6px;
   }
-  .header__menu {
+  .header__container .header__block .header__burger:hover {
+    background-color: #3498db;
+  }
+  .header__container .header__block .header__menu {
     position: fixed;
     top: -120%;
     left: 0;
@@ -682,25 +687,25 @@ h6 {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
     z-index: 5;
   }
-  .header__menu .header__menu-list {
+  .header__container .header__block .header__menu.active {
+    top: 0;
+  }
+  .header__container .header__block .header__menu .header__menu-list {
     display: flex;
     flex-direction: column;
     margin: 0;
   }
-  .header__menu .header__menu-list .header__menu-list-item {
+  .header__container .header__block .header__menu .header__menu-list .header__menu-list-item {
     margin-bottom: 1.5em;
   }
-  .header__menu .header__menu-list .header__menu-list-item:first-child {
+  .header__container .header__block .header__menu .header__menu-list .header__menu-list-item:first-child {
     margin-top: 0.5em;
   }
-  .header__menu .header__menu-list .header__menu-list-item:nth-child(6) {
+  .header__container .header__block .header__menu .header__menu-list .header__menu-list-item:nth-child(6) {
     margin-bottom: 25px;
   }
-  .header__menu .header__menu-list .header__menu-list-item .header__menu-list-link {
+  .header__container .header__block .header__menu .header__menu-list .header__menu-list-item .header__menu-list-link {
     padding: 10px 20px;
-  }
-  .header__menu.active {
-    top: 0;
   }
   .content {
     margin-top: 70px;

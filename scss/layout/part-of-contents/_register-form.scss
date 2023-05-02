@@ -1,0 +1,148 @@
+.register {
+  width: 100%;
+  padding-top: 55px;
+  background-color: #f7f7f7;
+
+  &__container {
+    max-width: min(1250px, 100%);
+    margin: 0 auto;
+
+    .register__block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+    }
+  }
+
+  /* Content Left */
+
+  &__info {
+    margin: 2.3em 0 0 -1.4em;
+    text-align: center;
+    padding: 0 20px;
+
+    &-h {
+      font: $font-h1;
+      letter-spacing: 0.07em;
+      margin-bottom: 26px;
+    }
+
+    &-p {
+      font: $font;
+      line-height: 32px;
+      letter-spacing: $spacing;
+      text-align: center;
+      padding: 0 3.5em;
+    }
+  }
+
+  /* Registration Form */
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -2px;
+
+    &-h {
+      font: $font-h2;
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+
+    .register__label {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      font: $font-small;
+
+      & > .register__required {
+        display: flex;
+        align-items: center;
+        padding-top: 3px;
+        font-weight: bold;
+        color: red;
+        margin-left: 3px;
+      }
+    }
+
+    &-input {
+      display: flex;
+      flex-direction: column;
+      font: $font;
+
+      #register__choise,
+      #register__email,
+      #register__lastname,
+      #register__name,
+      #register__phone {
+        width: 590px;
+        height: 52px;
+        border: 1px solid #c3c3c3;
+        border-radius: 5px;
+        padding: 15px;
+        margin: 2px 0 10px 0;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25) inset;
+
+        &:focus {
+          box-shadow: 0 0 5px rgba(0, 0, 255, 0.25);
+
+          &::placeholder {
+            color: transparent;
+            letter-spacing: $spacing;
+          }
+        }
+      }
+    }
+
+    /* Checkbox Setting's */
+    &-application {
+      display: inline-flex;
+      align-items: center;
+      margin: 10px 0 36px 0;
+
+      #register__checkbox {
+        width: 13px;
+        height: 13px;
+        margin: 0 5px 0 0;
+      }
+
+      .register__label-checkbox {
+        position: relative;
+        font: $font-small;
+
+        a {
+          margin-left: 3px;
+        }
+
+        .register__required {
+          position: absolute;
+          top: 3px;
+          text-align: center;
+          font-weight: bold;
+          color: red;
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+
+  /* Submit Button */
+  #register__submit {
+    margin: 0 auto 30px auto;
+    width: 370px;
+    height: 52px;
+    padding: 10px 15px;
+    border-radius: 37px;
+    font-weight: bold;
+    background-color: #337ab7;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #3498db;
+    }
+  }
+}
