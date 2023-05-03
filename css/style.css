@@ -109,7 +109,7 @@ h6 {
   top: 0;
   left: 0;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-  z-index: 100;
+  z-index: 1100;
 }
 .header::before {
   content: "";
@@ -681,7 +681,7 @@ h6 {
 .comments {
   width: 100%;
   padding-top: 66px;
-  margin-bottom: 84px;
+  margin-bottom: 0;
 }
 .comments__container {
   max-width: min(1250px, 100%);
@@ -749,7 +749,7 @@ h6 {
 @media (max-width: 497px) {
   .content .comments {
     padding-top: 30px;
-    margin-bottom: 42px;
+    margin-bottom: -10px;
   }
   .content .comments__container {
     max-width: 320px;
@@ -805,6 +805,68 @@ h6 {
   .content .comments__container .comments__block .comments__slider .slick-slide .comments__slider-item .comments__slider-item-person p {
     font: 14px "Open Sans", sans-serif;
     font-style: italic;
+  }
+}
+.video {
+  width: 100%;
+  padding-top: 66px;
+  background-color: #f7f7f7;
+}
+.video__container {
+  max-width: min(1250px, 100%);
+  margin: 0 auto;
+}
+.video__container .video__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  width: 100%;
+}
+.video__container .video__block .video__block-title {
+  font: bold 33px "Open Sans", sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.video__container .video__block .video__block-text {
+  text-align: center;
+  letter-spacing: 1px;
+  font: 16px "Open Sans", sans-serif;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.video__container .video__block .video__block-content {
+  padding: 15px;
+  margin-bottom: 74px;
+}
+
+@media (max-width: 497px) {
+  .content .video {
+    width: 100%;
+    padding-top: 66px;
+    background-color: #f7f7f7;
+  }
+  .content .video__container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .content .video__container .video__block .video__block-title {
+    font: 700 22px "Open Sans", sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  .content .video__container .video__block .video__block-text {
+    text-align: center;
+    letter-spacing: 0;
+    font: 16px "Open Sans", sans-serif;
+    margin-bottom: 30px;
+  }
+  .content .video__container .video__block .video__block-content {
+    width: 100%;
+    height: 188px;
+    margin-bottom: 74px;
+    padding: 0;
   }
 }
 @media (max-width: 1440px) {
