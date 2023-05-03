@@ -1,66 +1,16 @@
 @media (max-width: 1440px) {
-  .header {
-
-    &__container {
-      max-width: min(1250px, 100%);
-    }
-  }
-
 
   .register__container {
-    max-width: min(1250px, 100%);
-  }
-  .slider__container {
     max-width: min(1250px, 100%);
   }
 }
 @media (max-width: 1250px) {
-  .header {
-
-    &__container {
-      max-width: min(992px, 100%);
-    }
-  }
-
 
   .register__container {
     max-width: min(992px, 100%);
   }
-  .slider {
-    padding-top: 60px;
-  }
-  .slider__container {
-    max-width: min(992px, 100%);
 
-      .slider__block {
 
-        .slider-h1 {
-          font: $font-h1-small;
-          letter-spacing: 0.075em;
-          margin-bottom: 25px;
-        }
-
-        .slider__item {
-
-          .slick-slide {
-
-            h2 {
-              font: $font-h2-course;
-              padding: 16px 0  14px 0;
-              margin-bottom: 28px;
-              border-bottom: 1px solid #43a0de;
-            }
-
-            p {
-              font: $font-small;
-              color: #c3c3c3;
-              line-height: 26px;
-              padding: 0 30px;
-            }
-          }
-        }
-      }
-    }
   .statistic {
     padding: 45px 0;
   }
@@ -127,39 +77,6 @@
   }
 }
 @media (max-width: 992px) {
-  .header {
-
-    &__container {
-
-      max-width: min(792px, 100%);
-
-      .header__block {
-
-        .header__logo {
-          margin: 7px auto 7px 0;
-
-          img {
-            width: 70px;
-            height: 70px;
-          }
-        }
-
-        .header__menu {
-
-          .header__menu-list {
-            margin: 32px 0 33px auto;
-
-            .header__menu-list-item {
-
-              .header__menu-list-link {
-                padding: $list-menu-small;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
 
   .content {
     margin-top: 84px;
@@ -201,33 +118,6 @@
       }
     }
 
-    .slider {
-      padding-top: 40px;
-
-      .slider__container {
-        max-width: min(792px, 100%);
-
-        .slider__block {
-
-          .slider-h1 {
-          }
-
-          .slider__item {
-
-            .slick-slide {
-
-              h2 {
-              }
-
-              p {
-                padding: 0 25px;
-                margin-bottom: 42px;
-              }
-            }
-          }
-        }
-      }
-    }
     .register {
       padding-top: 40px;
 
@@ -271,147 +161,10 @@
     width: 290px;
   }
 }
-@media (max-width: 792px) {
-  .header {
-
-    &__container {
-      max-width: min(697px, 100%);
-
-      .header__block {
-
-        .header__logo {
-          margin: 5px auto 5px 0;
-
-          img {
-            width: 60px;
-            height: 60px;
-          }
-        }
-
-        .header__burger {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 44px;
-          height: 30px;
-          border-radius: 4px;
-          background-color: #337ab7;
-          z-index: 20;
-          margin: 20px 0 20px auto;
-
-          .header__burger-toggle {
-            display: block;
-            position: relative;
-            height: $burger-toggle-height;
-            width: $burger-toggle-wight;
-            background-color: $burger-toggle;
-
-            &::after, &::before {
-              content: "";
-              position: absolute;
-              height: $burger-toggle-height;
-              width: $burger-toggle-wight;
-              background-color: $burger-toggle;
-            }
-
-            &::after {
-              bottom: 6px;
-            }
-
-            &::before {
-              top: 6px;
-            }
-          }
-
-          &:hover {
-            background-color: #3498db;
-          }
-        }
-
-        .header__menu {
-          position: fixed;
-          top: -120%;
-          left: 0;
-          width: 100%;
-          background-color: #ffffff;
-          padding-top: 70px;
-          overflow: auto;
-          transition: $animation;
-          box-shadow: $shadow;
-          z-index: 5;
-
-          &.active {
-            top: 0;
-          }
-
-          .header__menu-list {
-            display: flex;
-            flex-direction: column;
-            margin: 0;
-
-            .header__menu-list-item {
-              margin-bottom: 1.5em;
-
-              &:first-child {
-                margin-top: 0.5em;
-              }
-
-              &:nth-child(6) {
-                margin-bottom: 25px;
-              }
-
-              .header__menu-list-link {
-                padding: $list-menu;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+@media (max-width: 798px) {
 
   .content {
     margin-top: 70px;
-
-    .slider {
-      padding-top: 40px;
-
-      .slider__container {
-        max-width: min(697px, 100%);
-
-        .slider__block {
-
-          .slider-h1 {
-            font: $font-h1-mobile;
-            letter-spacing: 0.075em;
-            margin-bottom: 25px;
-          }
-
-          .slider__item {
-
-            .slick-slide {
-              padding: 0 40px;
-
-              h2 {
-                font: $font-h2-course;
-                padding: 20px 0 5px 0;
-                line-height: 23px;
-                margin-bottom: 14px;
-                border-bottom: 1px solid #43a0de;
-              }
-
-              p {
-                font: $font-small;
-                color: #c3c3c3;
-                line-height: 22px;
-                padding: 0 40px;
-                margin-bottom: 42px;
-              }
-            }
-          }
-        }
-      }
-    }
 
     .register {
       padding-top: 40px;
@@ -431,22 +184,8 @@
   }
 }
 @media (max-width: 697px) {
-  .header {
-
-    &__container {
-      max-width: min(512px, 100%);
-    }
-  }
 
   .content {
-
-    .slider {
-      padding-top: 40px;
-
-      .slider__container {
-        max-width: min(512px, 100%);
-      }
-    }
 
     .register {
       padding-top: 40px;
@@ -492,13 +231,6 @@
 
 }
 @media (max-width: 512px) {
-  .header {
-
-    &__container {
-      max-width: 320px;
-    }
-  }
-
 
   .content {
 
@@ -548,46 +280,6 @@
       }
     }
 
-    .slider {
-      padding-top: 68px;
-      margin-bottom: 30px;
-
-      .slider__container {
-        max-width: 320px;
-
-        .slider__block {
-
-          .slider-h1 {
-            font: $font-h1-mobile;
-            letter-spacing: 0.075em;
-            margin-bottom: 30px;
-          }
-
-          .slider__item {
-
-            .slick-slide {
-              padding: 0 15px;
-
-              h2 {
-                font: $font-h2-course;
-                padding: 20px 0  5px 0;
-                line-height: 23px;
-                margin-bottom: 14px;
-                border-bottom: 1px solid #43a0de;
-              }
-
-              p {
-                font: $font-small;
-                color: #c3c3c3;
-                line-height: 22px;
-                padding: 0;
-                margin-bottom: 42px;
-              }
-            }
-          }
-        }
-      }
-    }
     .register {
       padding-top: 40px;
 

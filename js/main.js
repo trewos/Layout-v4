@@ -4,15 +4,17 @@ $(document).ready(function() {
     });
 });
 $(document).ready(function(){
-    $('.slider__item').slick({
+    $('.course__item').slick({
         dots: false,
         arrows: false,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
+        autoplay: true,
+        autoplaySpeed: 4000,
         responsive: [
             {
-                breakpoint: 992,
+                breakpoint: 993,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
@@ -20,7 +22,7 @@ $(document).ready(function(){
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 799,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -30,3 +32,17 @@ $(document).ready(function(){
         ]
     });
 });
+
+$(document).ready(function(){
+    $('.comments__slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        arrows: false,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 10000000,
+    });
+});
+
