@@ -12,137 +12,560 @@
       justify-content: space-between;
       align-items: center;
       padding: 0 15px;
-    }
-  }
 
-  /* Content Left */
+      /* Content Left */
 
-  &__info {
-    margin: 2.3em 0 0 -1.4em;
-    text-align: center;
-    padding: 0 20px;
+      .register__info {
+        margin: 36px 0 0 -18px;
+        text-align: center;
 
-    &-h {
-      font: $font-h1;
-      letter-spacing: 0.07em;
-      margin-bottom: 26px;
-    }
+        .register__info-title {
+          font: $font-h1;
+          letter-spacing: 2px;
+          margin-bottom: 26px;
+        }
 
-    &-p {
-      font: $font;
-      line-height: 32px;
-      letter-spacing: $spacing;
-      text-align: center;
-      padding: 0 3.5em;
-    }
-  }
-
-  /* Registration Form */
-
-  &__form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: -2px;
-
-    &-h {
-      font: $font-h2;
-      letter-spacing: 0.1em;
-      margin-bottom: 12px;
-    }
-
-    .register__label {
-      display: flex;
-      flex-direction: row;
-      text-align: center;
-      font: $font-small;
-
-      & > .register__required {
-        display: flex;
-        align-items: center;
-        padding-top: 3px;
-        font-weight: bold;
-        color: red;
-        margin-left: 3px;
+        .register__info-text {
+          font: $font;
+          line-height: 32px;
+          letter-spacing: $spacing;
+          text-align: center;
+          padding: 0 74px;
+        }
       }
-    }
 
-    &-input {
-      display: flex;
-      flex-direction: column;
-      font: $font;
+      /* Registration Form */
 
-      #register__choise,
-      #register__email,
-      #register__lastname,
-      #register__name,
-      #register__phone {
-        width: 590px;
-        height: 52px;
-        border: 1px solid #c3c3c3;
-        border-radius: 5px;
-        padding: 15px;
-        margin: 2px 0 10px 0;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25) inset;
+      .register__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: -2px;
 
-        &:focus {
-          box-shadow: 0 0 5px rgba(0, 0, 255, 0.25);
+        &-title {
+          font: $font-h2;
+          letter-spacing: 0.1em;
+          margin-bottom: 12px;
+        }
 
-          &::placeholder {
-            color: transparent;
+        &-input {
+          display: flex;
+          flex-direction: column;
+          font: $font;
+
+          .register__form-input-label {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            font: $font-small;
+
+            & > .register__form-input-label-required {
+              display: flex;
+              align-items: center;
+              padding-top: 4px;
+              font-weight: bold;
+              color: red;
+              margin-left: 2px;
+            }
+          }
+
+          #register__choise,
+          #register__email,
+          #register__lastname,
+          #register__name,
+          #register__phone {
+            padding: 15px;
+            margin: 3px 0 8px 0;
+            width: 590px;
+            height: 52px;
+            border: 1px solid #c3c3c3;
+            border-radius: 5px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25) inset;
+
+            &:focus {
+              box-shadow: 0 0 5px rgba(0, 0, 255, 0.25);
+
+              &::placeholder {
+                color: transparent;
+                letter-spacing: $spacing;
+              }
+            }
+          }
+
+          /* Checkbox Setting's */
+
+          .register__form-input-application {
+            display: inline-flex;
+            align-items: center;
+            margin: 10px 0 36px 0;
+
+            #register__checkbox {
+              width: 13px;
+              height: 13px;
+              margin-right: 6px;
+            }
+
+            .register__form-input-label-checkbox {
+              position: relative;
+              font: $font-small;
+
+              a {
+                margin-left: 4px;
+              }
+
+              .register__form-input-label-required {
+                position: absolute;
+                top: 4px;
+                text-align: center;
+                font-weight: bold;
+                color: red;
+                margin-left: 6px;
+              }
+            }
+          }
+
+          /* Submit Button */
+
+          #register__submit {
+            margin: 0 auto 29px auto;
+            padding: 10px 15px;
+            width: 368px;
+            height: 52px;
+            border-radius: 38px;
+            background-color: #337ab7;
+            color: #ffffff;
+            font-weight: bold;
             letter-spacing: $spacing;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &:hover {
+              background-color: #3498db;
+            }
           }
         }
       }
     }
-
-    /* Checkbox Setting's */
-    &-application {
-      display: inline-flex;
-      align-items: center;
-      margin: 10px 0 36px 0;
-
-      #register__checkbox {
-        width: 13px;
-        height: 13px;
-        margin: 0 5px 0 0;
-      }
-
-      .register__label-checkbox {
-        position: relative;
-        font: $font-small;
-
-        a {
-          margin-left: 3px;
-        }
-
-        .register__required {
-          position: absolute;
-          top: 3px;
-          text-align: center;
-          font-weight: bold;
-          color: red;
-          margin-left: 8px;
-        }
-      }
-    }
   }
+}
 
-  /* Submit Button */
-  #register__submit {
-    margin: 0 auto 30px auto;
-    width: 370px;
-    height: 52px;
-    padding: 10px 15px;
-    border-radius: 37px;
-    font-weight: bold;
-    background-color: #337ab7;
-    color: #ffffff;
-    text-transform: uppercase;
-    cursor: pointer;
 
-    &:hover {
-      background-color: #3498db;
+@media (max-width: 1440px) {
+  .content {
+
+    .register {
+
+      .register__container {
+        max-width: min(1250px, 100%);
+
+      }
     }
   }
 }
+@media (max-width: 1250px) {
+  .content {
+
+    .register {
+
+      .register__container {
+        max-width: min(992px, 100%);
+
+        .register__block {
+
+          /* Content Left */
+
+          .register__info {
+            margin: 36px 0 0 -18px;
+            text-align: center;
+
+            .register__info-title {
+              font: $font-h1-small;
+              letter-spacing: 2px;
+              margin-bottom: 20px;
+            }
+
+            .register__info-text {
+              font: $font;
+              line-height: 26px;
+              letter-spacing: $spacing;
+              text-align: center;
+              padding: 0 37px;
+            }
+          }
+
+          /* Registration Form */
+
+          .register__form {
+            margin-top: -2px;
+
+            &-title {
+              font: $font-h2;
+              letter-spacing: 0.1em;
+              margin-bottom: 12px;
+            }
+
+            &-input {
+              font: $font;
+
+              .register__form-input-label {
+                font: $font-small;
+
+                & > .register__form-input-label-required {
+                  padding-top: 3px;
+                  margin-left: 2px;
+                }
+              }
+
+              #register__choise,
+              #register__email,
+              #register__lastname,
+              #register__name,
+              #register__phone {
+                width: 475px;
+              }
+
+              .register__form-input-application {
+                margin: 10px 0 36px 0;
+
+                #register__checkbox {
+                  width: 13px;
+                  height: 13px;
+                  margin-right: 6px;
+                }
+
+                .register__form-input-label-checkbox {
+                  font: $font-small;
+
+                  a {
+                    margin-left: 4px;
+                  }
+
+                  .register__form-input-label-required {
+                    top: 3px;
+                    margin-left: 6px;
+                  }
+                }
+              }
+
+              #register__submit {
+                width: 310px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+
+  .content {
+
+    .register {
+      padding-top: 30px;
+
+      .register__container {
+        max-width: min(798px, 100%);
+
+        .register__block {
+          flex-direction: column;
+
+          /* Content Left */
+
+          .register__info {
+            margin: 26px 0 40px 0;
+
+            .register__info-title {
+              font: $font-h1-small;
+              letter-spacing: 2px;
+              margin-bottom: 20px;
+            }
+
+            .register__info-text {
+              font: $font;
+              line-height: 26px;
+              letter-spacing: $spacing;
+              text-align: center;
+              padding: 0 37px;
+            }
+          }
+
+          /* Registration Form */
+
+          .register__form {
+            margin-top: -2px;
+            align-items: center;
+
+            &-title {
+              font: $font-h2;
+              letter-spacing: 0.1em;
+              margin-bottom: 12px;
+            }
+
+            &-input {
+              font: $font;
+
+              .register__form-input-label {
+                font: $font-small;
+
+                & > .register__form-input-label-required {
+                  padding-top: 3px;
+                  margin-left: 2px;
+                }
+              }
+
+              #register__choise,
+              #register__email,
+              #register__lastname,
+              #register__name,
+              #register__phone {
+                width: 450px;
+              }
+
+              .register__form-input-application {
+                margin: 10px 0 36px 0;
+
+                #register__checkbox {
+                  width: 13px;
+                  height: 13px;
+                  margin-right: 6px;
+                }
+
+                .register__form-input-label-checkbox {
+                  font: $font-small;
+
+                  a {
+                    margin-left: 4px;
+                  }
+
+                  .register__form-input-label-required {
+                    top: 3px;
+                    margin-left: 6px;
+                  }
+                }
+              }
+
+              #register__submit {
+                width: 290px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 798px) {
+  .content {
+
+    .register {
+      padding-top: 20px;
+
+      .register__container {
+        max-width: min(697px, 100%);
+
+        .register__block {
+
+          /* Content Left */
+
+          .register__info {
+            margin: 13px 0 50px 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 697px) {
+
+  .content {
+
+    .register {
+
+      .register__container {
+        max-width: min(497px, 100%);
+
+        .register__block {
+
+          /* Content Left */
+
+          .register__info {
+
+            .register__info-title {
+              font: $font-h1-small;
+              letter-spacing: 2px;
+              margin-bottom: 10px;
+            }
+
+            .register__info-text {
+              font: $font;
+              line-height: 26px;
+              letter-spacing: $spacing;
+              text-align: center;
+              padding: 0 37px;
+            }
+          }
+
+          /* Registration Form */
+
+          .register__form {
+            margin-top: -2px;
+            align-items: center;
+
+            &-title {
+              font: $font-h2;
+              letter-spacing: 0.1em;
+              margin-bottom: 12px;
+            }
+
+            &-input {
+              font: $font;
+
+              .register__form-input-label {
+                font: $font-small;
+
+                & > .register__form-input-label-required {
+                  padding-top: 3px;
+                  margin-left: 2px;
+                }
+              }
+
+              #register__choise,
+              #register__email,
+              #register__lastname,
+              #register__name,
+              #register__phone {
+                width: 350px;
+                height: 46px;
+              }
+
+              .register__form-input-application {
+                margin: 10px 0 36px 0;
+
+                #register__checkbox {
+                  width: 13px;
+                  height: 13px;
+                  margin-right: 6px;
+                }
+
+                .register__form-input-label-checkbox {
+                  font: $font-small;
+
+                  a {
+                    margin-left: 4px;
+                  }
+
+                  .register__form-input-label-required {
+                    top: 3px;
+                    margin-left: 6px;
+                  }
+                }
+              }
+
+              #register__submit {
+                width: 280px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 497px) {
+
+  .content {
+
+    .register {
+      padding-top: 20px;
+
+      .register__container {
+        max-width: 320px;
+
+        .register__block {
+
+          /* Content Left */
+
+          .register__info {
+            margin-bottom: 55px;
+
+            .register__info-title {
+              font: $font-h1-mobile;
+              letter-spacing: 2px;
+              line-height: 31px;
+              margin-bottom: 16px;
+            }
+
+            .register__info-text {
+              font: $font-small;
+              letter-spacing: 0;
+              line-height: 25px;
+              padding: 0 2px;
+            }
+          }
+
+          /* Registration Form */
+
+          .register__form {
+            align-items: center;
+
+            &-title {
+              font: $font-h2;
+              letter-spacing: 0.1em;
+              margin-bottom: 12px;
+            }
+
+            &-input {
+              font: $font;
+
+              .register__form-input-label {
+                font: $font-small;
+
+                & > .register__form-input-label-required {
+                  padding-top: 4px;
+                  margin-left: 2px;
+                }
+              }
+
+              #register__choise,
+              #register__email,
+              #register__lastname,
+              #register__name,
+              #register__phone {
+                width: 290px;
+                height: 42px;
+              }
+
+              .register__form-input-application {
+                margin: 10px 0 36px 0;
+
+                #register__checkbox {
+                  width: 13px;
+                  height: 13px;
+                  margin-right: 6px;
+                }
+
+                .register__form-input-label-checkbox {
+                  font: $font-small;
+
+                  a {
+                    margin-left: 4px;
+                  }
+
+                  .register__form-input-label-required {
+                    top: 23px;
+                    margin-left: 7px;
+                  }
+                }
+              }
+
+                #register__submit {
+                  width: 280px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

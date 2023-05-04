@@ -293,9 +293,6 @@ h6 {
   width: 100%;
   padding-top: 55px;
   background-color: #f7f7f7;
-  /* Content Left */
-  /* Registration Form */
-  /* Submit Button */
 }
 .register__container {
   max-width: min(1250px, 100%);
@@ -306,128 +303,439 @@ h6 {
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
+  /* Content Left */
+  /* Registration Form */
 }
-.register__info {
-  margin: 2.3em 0 0 -1.4em;
+.register__container .register__block .register__info {
+  margin: 36px 0 0 -18px;
   text-align: center;
-  padding: 0 20px;
 }
-.register__info-h {
+.register__container .register__block .register__info .register__info-title {
   font: bold 33px "Open Sans", sans-serif;
-  letter-spacing: 0.07em;
+  letter-spacing: 2px;
   margin-bottom: 26px;
 }
-.register__info-p {
+.register__container .register__block .register__info .register__info-text {
   font: 16px "Open Sans", sans-serif;
   line-height: 32px;
   letter-spacing: 1px;
   text-align: center;
-  padding: 0 3.5em;
+  padding: 0 74px;
 }
-.register__form {
+.register__container .register__block .register__form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-top: -2px;
-  /* Checkbox Setting's */
 }
-.register__form-h {
+.register__container .register__block .register__form-title {
   font: bold 20px "Open Sans", sans-serif;
   letter-spacing: 0.1em;
   margin-bottom: 12px;
 }
-.register__form .register__label {
+.register__container .register__block .register__form-input {
+  display: flex;
+  flex-direction: column;
+  font: 16px "Open Sans", sans-serif;
+  /* Checkbox Setting's */
+  /* Submit Button */
+}
+.register__container .register__block .register__form-input .register__form-input-label {
   display: flex;
   flex-direction: row;
   text-align: center;
   font: 14px "Open Sans", sans-serif;
 }
-.register__form .register__label > .register__required {
+.register__container .register__block .register__form-input .register__form-input-label > .register__form-input-label-required {
   display: flex;
   align-items: center;
-  padding-top: 3px;
+  padding-top: 4px;
   font-weight: bold;
   color: red;
-  margin-left: 3px;
+  margin-left: 2px;
 }
-.register__form-input {
-  display: flex;
-  flex-direction: column;
-  font: 16px "Open Sans", sans-serif;
-}
-.register__form-input #register__choise,
-.register__form-input #register__email,
-.register__form-input #register__lastname,
-.register__form-input #register__name,
-.register__form-input #register__phone {
+.register__container .register__block .register__form-input #register__choise,
+.register__container .register__block .register__form-input #register__email,
+.register__container .register__block .register__form-input #register__lastname,
+.register__container .register__block .register__form-input #register__name,
+.register__container .register__block .register__form-input #register__phone {
+  padding: 15px;
+  margin: 3px 0 8px 0;
   width: 590px;
   height: 52px;
   border: 1px solid #c3c3c3;
   border-radius: 5px;
-  padding: 15px;
-  margin: 2px 0 10px 0;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25) inset;
 }
-.register__form-input #register__choise:focus,
-.register__form-input #register__email:focus,
-.register__form-input #register__lastname:focus,
-.register__form-input #register__name:focus,
-.register__form-input #register__phone:focus {
+.register__container .register__block .register__form-input #register__choise:focus,
+.register__container .register__block .register__form-input #register__email:focus,
+.register__container .register__block .register__form-input #register__lastname:focus,
+.register__container .register__block .register__form-input #register__name:focus,
+.register__container .register__block .register__form-input #register__phone:focus {
   box-shadow: 0 0 5px rgba(0, 0, 255, 0.25);
 }
-.register__form-input #register__choise:focus::-moz-placeholder, .register__form-input #register__email:focus::-moz-placeholder, .register__form-input #register__lastname:focus::-moz-placeholder, .register__form-input #register__name:focus::-moz-placeholder, .register__form-input #register__phone:focus::-moz-placeholder {
+.register__container .register__block .register__form-input #register__choise:focus::-moz-placeholder, .register__container .register__block .register__form-input #register__email:focus::-moz-placeholder, .register__container .register__block .register__form-input #register__lastname:focus::-moz-placeholder, .register__container .register__block .register__form-input #register__name:focus::-moz-placeholder, .register__container .register__block .register__form-input #register__phone:focus::-moz-placeholder {
   color: transparent;
   letter-spacing: 1px;
 }
-.register__form-input #register__choise:focus::placeholder,
-.register__form-input #register__email:focus::placeholder,
-.register__form-input #register__lastname:focus::placeholder,
-.register__form-input #register__name:focus::placeholder,
-.register__form-input #register__phone:focus::placeholder {
+.register__container .register__block .register__form-input #register__choise:focus::placeholder,
+.register__container .register__block .register__form-input #register__email:focus::placeholder,
+.register__container .register__block .register__form-input #register__lastname:focus::placeholder,
+.register__container .register__block .register__form-input #register__name:focus::placeholder,
+.register__container .register__block .register__form-input #register__phone:focus::placeholder {
   color: transparent;
   letter-spacing: 1px;
 }
-.register__form-application {
+.register__container .register__block .register__form-input .register__form-input-application {
   display: inline-flex;
   align-items: center;
   margin: 10px 0 36px 0;
 }
-.register__form-application #register__checkbox {
+.register__container .register__block .register__form-input .register__form-input-application #register__checkbox {
   width: 13px;
   height: 13px;
-  margin: 0 5px 0 0;
+  margin-right: 6px;
 }
-.register__form-application .register__label-checkbox {
+.register__container .register__block .register__form-input .register__form-input-application .register__form-input-label-checkbox {
   position: relative;
   font: 14px "Open Sans", sans-serif;
 }
-.register__form-application .register__label-checkbox a {
-  margin-left: 3px;
+.register__container .register__block .register__form-input .register__form-input-application .register__form-input-label-checkbox a {
+  margin-left: 4px;
 }
-.register__form-application .register__label-checkbox .register__required {
+.register__container .register__block .register__form-input .register__form-input-application .register__form-input-label-checkbox .register__form-input-label-required {
   position: absolute;
-  top: 3px;
+  top: 4px;
   text-align: center;
   font-weight: bold;
   color: red;
-  margin-left: 8px;
+  margin-left: 6px;
 }
-.register #register__submit {
-  margin: 0 auto 30px auto;
-  width: 370px;
-  height: 52px;
+.register__container .register__block .register__form-input #register__submit {
+  margin: 0 auto 29px auto;
   padding: 10px 15px;
-  border-radius: 37px;
-  font-weight: bold;
+  width: 368px;
+  height: 52px;
+  border-radius: 38px;
   background-color: #337ab7;
   color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
 }
-.register #register__submit:hover {
+.register__container .register__block .register__form-input #register__submit:hover {
   background-color: #3498db;
 }
 
+@media (max-width: 1440px) {
+  .content .register .register__container {
+    max-width: min(1250px, 100%);
+  }
+}
+@media (max-width: 1250px) {
+  .content .register .register__container {
+    max-width: min(992px, 100%);
+  }
+  .content .register .register__container .register__block {
+    /* Content Left */
+    /* Registration Form */
+  }
+  .content .register .register__container .register__block .register__info {
+    margin: 36px 0 0 -18px;
+    text-align: center;
+  }
+  .content .register .register__container .register__block .register__info .register__info-title {
+    font: 700 28px "Open Sans", sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  .content .register .register__container .register__block .register__info .register__info-text {
+    font: 16px "Open Sans", sans-serif;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 0 37px;
+  }
+  .content .register .register__container .register__block .register__form {
+    margin-top: -2px;
+  }
+  .content .register .register__container .register__block .register__form-title {
+    font: bold 20px "Open Sans", sans-serif;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+  }
+  .content .register .register__container .register__block .register__form-input {
+    font: 16px "Open Sans", sans-serif;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-label {
+    font: 14px "Open Sans", sans-serif;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-label > .register__form-input-label-required {
+    padding-top: 3px;
+    margin-left: 2px;
+  }
+  .content .register .register__container .register__block .register__form-input #register__choise,
+  .content .register .register__container .register__block .register__form-input #register__email,
+  .content .register .register__container .register__block .register__form-input #register__lastname,
+  .content .register .register__container .register__block .register__form-input #register__name,
+  .content .register .register__container .register__block .register__form-input #register__phone {
+    width: 475px;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-application {
+    margin: 10px 0 36px 0;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-application #register__checkbox {
+    width: 13px;
+    height: 13px;
+    margin-right: 6px;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-application .register__form-input-label-checkbox {
+    font: 14px "Open Sans", sans-serif;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-application .register__form-input-label-checkbox a {
+    margin-left: 4px;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-application .register__form-input-label-checkbox .register__form-input-label-required {
+    top: 3px;
+    margin-left: 6px;
+  }
+  .content .register .register__container .register__block .register__form-input #register__submit {
+    width: 310px;
+  }
+}
+@media (max-width: 992px) {
+  .content .register {
+    padding-top: 30px;
+  }
+  .content .register .register__container {
+    max-width: min(798px, 100%);
+  }
+  .content .register .register__container .register__block {
+    flex-direction: column;
+    /* Content Left */
+    /* Registration Form */
+  }
+  .content .register .register__container .register__block .register__info {
+    margin: 26px 0 40px 0;
+  }
+  .content .register .register__container .register__block .register__info .register__info-title {
+    font: 700 28px "Open Sans", sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  .content .register .register__container .register__block .register__info .register__info-text {
+    font: 16px "Open Sans", sans-serif;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 0 37px;
+  }
+  .content .register .register__container .register__block .register__form {
+    margin-top: -2px;
+    align-items: center;
+  }
+  .content .register .register__container .register__block .register__form-title {
+    font: bold 20px "Open Sans", sans-serif;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+  }
+  .content .register .register__container .register__block .register__form-input {
+    font: 16px "Open Sans", sans-serif;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-label {
+    font: 14px "Open Sans", sans-serif;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-label > .register__form-input-label-required {
+    padding-top: 3px;
+    margin-left: 2px;
+  }
+  .content .register .register__container .register__block .register__form-input #register__choise,
+  .content .register .register__container .register__block .register__form-input #register__email,
+  .content .register .register__container .register__block .register__form-input #register__lastname,
+  .content .register .register__container .register__block .register__form-input #register__name,
+  .content .register .register__container .register__block .register__form-input #register__phone {
+    width: 450px;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-application {
+    margin: 10px 0 36px 0;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-application #register__checkbox {
+    width: 13px;
+    height: 13px;
+    margin-right: 6px;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-application .register__form-input-label-checkbox {
+    font: 14px "Open Sans", sans-serif;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-application .register__form-input-label-checkbox a {
+    margin-left: 4px;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-application .register__form-input-label-checkbox .register__form-input-label-required {
+    top: 3px;
+    margin-left: 6px;
+  }
+  .content .register .register__container .register__block .register__form-input #register__submit {
+    width: 290px;
+  }
+}
+@media (max-width: 798px) {
+  .content .register {
+    padding-top: 20px;
+  }
+  .content .register .register__container {
+    max-width: min(697px, 100%);
+  }
+  .content .register .register__container .register__block {
+    /* Content Left */
+  }
+  .content .register .register__container .register__block .register__info {
+    margin: 13px 0 50px 0;
+  }
+}
+@media (max-width: 697px) {
+  .content .register .register__container {
+    max-width: min(497px, 100%);
+  }
+  .content .register .register__container .register__block {
+    /* Content Left */
+    /* Registration Form */
+  }
+  .content .register .register__container .register__block .register__info .register__info-title {
+    font: 700 28px "Open Sans", sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  .content .register .register__container .register__block .register__info .register__info-text {
+    font: 16px "Open Sans", sans-serif;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 0 37px;
+  }
+  .content .register .register__container .register__block .register__form {
+    margin-top: -2px;
+    align-items: center;
+  }
+  .content .register .register__container .register__block .register__form-title {
+    font: bold 20px "Open Sans", sans-serif;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+  }
+  .content .register .register__container .register__block .register__form-input {
+    font: 16px "Open Sans", sans-serif;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-label {
+    font: 14px "Open Sans", sans-serif;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-label > .register__form-input-label-required {
+    padding-top: 3px;
+    margin-left: 2px;
+  }
+  .content .register .register__container .register__block .register__form-input #register__choise,
+  .content .register .register__container .register__block .register__form-input #register__email,
+  .content .register .register__container .register__block .register__form-input #register__lastname,
+  .content .register .register__container .register__block .register__form-input #register__name,
+  .content .register .register__container .register__block .register__form-input #register__phone {
+    width: 350px;
+    height: 46px;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-application {
+    margin: 10px 0 36px 0;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-application #register__checkbox {
+    width: 13px;
+    height: 13px;
+    margin-right: 6px;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-application .register__form-input-label-checkbox {
+    font: 14px "Open Sans", sans-serif;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-application .register__form-input-label-checkbox a {
+    margin-left: 4px;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-application .register__form-input-label-checkbox .register__form-input-label-required {
+    top: 3px;
+    margin-left: 6px;
+  }
+  .content .register .register__container .register__block .register__form-input #register__submit {
+    width: 280px;
+  }
+}
+@media (max-width: 497px) {
+  .content .register {
+    padding-top: 20px;
+  }
+  .content .register .register__container {
+    max-width: 320px;
+  }
+  .content .register .register__container .register__block {
+    /* Content Left */
+    /* Registration Form */
+  }
+  .content .register .register__container .register__block .register__info {
+    margin-bottom: 55px;
+  }
+  .content .register .register__container .register__block .register__info .register__info-title {
+    font: 700 22px "Open Sans", sans-serif;
+    letter-spacing: 2px;
+    line-height: 31px;
+    margin-bottom: 16px;
+  }
+  .content .register .register__container .register__block .register__info .register__info-text {
+    font: 14px "Open Sans", sans-serif;
+    letter-spacing: 0;
+    line-height: 25px;
+    padding: 0 2px;
+  }
+  .content .register .register__container .register__block .register__form {
+    align-items: center;
+  }
+  .content .register .register__container .register__block .register__form-title {
+    font: bold 20px "Open Sans", sans-serif;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+  }
+  .content .register .register__container .register__block .register__form-input {
+    font: 16px "Open Sans", sans-serif;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-label {
+    font: 14px "Open Sans", sans-serif;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-label > .register__form-input-label-required {
+    padding-top: 4px;
+    margin-left: 2px;
+  }
+  .content .register .register__container .register__block .register__form-input #register__choise,
+  .content .register .register__container .register__block .register__form-input #register__email,
+  .content .register .register__container .register__block .register__form-input #register__lastname,
+  .content .register .register__container .register__block .register__form-input #register__name,
+  .content .register .register__container .register__block .register__form-input #register__phone {
+    width: 290px;
+    height: 42px;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-application {
+    margin: 10px 0 36px 0;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-application #register__checkbox {
+    width: 13px;
+    height: 13px;
+    margin-right: 6px;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-application .register__form-input-label-checkbox {
+    font: 14px "Open Sans", sans-serif;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-application .register__form-input-label-checkbox a {
+    margin-left: 4px;
+  }
+  .content .register .register__container .register__block .register__form-input .register__form-input-application .register__form-input-label-checkbox .register__form-input-label-required {
+    top: 23px;
+    margin-left: 7px;
+  }
+  .content .register .register__container .register__block .register__form-input #register__submit {
+    width: 280px;
+  }
+}
 .slick-dots {
   display: flex;
   justify-content: center;
@@ -454,7 +762,7 @@ h6 {
 .course {
   width: 100%;
   padding-top: 66px;
-  margin-bottom: 84px;
+  margin-bottom: 90px;
 }
 .course__container {
   max-width: min(1250px, 100%);
@@ -482,6 +790,10 @@ h6 {
   justify-content: center;
   overflow: hidden;
   width: 100%;
+}
+.course__container .course__block .course__item .slick-dots li {
+  padding-top: 15px;
+  margin-bottom: -40px;
 }
 .course__container .course__block .course__item .slick-slide {
   display: flex;
@@ -545,6 +857,11 @@ h6 {
     font: 700 26px "Open Sans", sans-serif;
     margin-bottom: 26px;
   }
+  .content .course .course__container .course__block .course__item .slick-dots li {
+    list-style: none;
+    padding: 0;
+    margin: 0 7px 40px 7px;
+  }
   .content .course .course__container .course__block .course__item .slick-slide .course__item-description {
     padding: 0 15px;
     margin-bottom: 42px;
@@ -591,7 +908,7 @@ h6 {
 @media (max-width: 497px) {
   .content .course {
     padding-top: 68px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
   .content .course .course__container {
     max-width: 320px;
@@ -620,64 +937,176 @@ h6 {
   }
 }
 .statistic {
-  padding: 65px 0;
+  padding: 80px 0;
   width: 100%;
   background-color: #3498db;
 }
-
-.statistic__container {
+.statistic .statistic__container {
   max-width: min(1250px, 100%);
   margin: 0 auto;
 }
-.statistic__container .statistic__info {
+.statistic .statistic__container .statistic__info {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
 }
-.statistic__container .statistic__info img {
+.statistic .statistic__container .statistic__info img {
   width: 85px;
   height: 60px;
 }
-.statistic__container .statistic__info h2 {
+.statistic .statistic__container .statistic__info h2 {
   font: bold 28px "Open Sans", sans-serif;
   color: #ffffff;
   margin: 20px 0 10px 0;
 }
-.statistic__container .statistic__info p {
+.statistic .statistic__container .statistic__info p {
   font: 16px "Open Sans", sans-serif;
   color: #ffffff;
 }
-.statistic__container .statistic__info-1 {
-  margin: 0 26px 0 58px;
-  padding: 15px 20px;
+.statistic .statistic__container .statistic__info-1 {
+  padding: 0 15px;
+  margin-left: 65px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.statistic__container .statistic__info-2 {
-  margin: 0 24px 0 40px;
-  padding: 15px 20px;
+.statistic .statistic__container .statistic__info-2 {
+  padding: 0 15px;
+  margin-left: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.statistic__container .statistic__info-3 {
-  margin: 0 24px 0 50px;
-  padding: 15px 20px;
+.statistic .statistic__container .statistic__info-3 {
+  margin-left: 50px;
+  padding: 0 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.statistic__container .statistic__info-4 {
-  margin: 0 -10px 0 0;
-  padding: 15px 20px;
+.statistic .statistic__container .statistic__info-4 {
+  padding: 0 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+@media (max-width: 1250px) {
+  .content .statistic {
+    padding: 55px 0;
+  }
+  .content .statistic .statistic__container {
+    max-width: min(992px, 100%);
+  }
+  .content .statistic .statistic__container .statistic__info img {
+    width: 85px;
+    height: 60px;
+  }
+  .content .statistic .statistic__container .statistic__info h2 {
+    font: bold 22px "Open Sans", sans-serif;
+    margin: 14px 0 6px 0;
+  }
+  .content .statistic .statistic__container .statistic__info p {
+    font: 14px "Open Sans", sans-serif;
+  }
+  .content .statistic .statistic__container .statistic__info-1 {
+    margin-left: 50px;
+  }
+  .content .statistic .statistic__container .statistic__info-2 {
+    margin-left: 45px;
+  }
+  .content .statistic .statistic__container .statistic__info-3 {
+    margin-left: 45px;
+  }
+}
+@media (max-width: 992px) {
+  .content .statistic {
+    padding: 40px 0;
+    margin: 0 auto;
+  }
+  .content .statistic .statistic__container {
+    max-width: min(396px, 100%);
+    margin: 0 auto;
+  }
+  .content .statistic .statistic__container .statistic__info {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .content .statistic .statistic__container .statistic__info img {
+    width: 85px;
+    height: 60px;
+  }
+  .content .statistic .statistic__container .statistic__info h2 {
+    font: bold 18px "Open Sans", sans-serif;
+    margin: 8px 0 6px 0;
+  }
+  .content .statistic .statistic__container .statistic__info p {
+    font: 14px "Open Sans", sans-serif;
+  }
+  .content .statistic .statistic__container .statistic__info-1 {
+    margin: 0;
+    padding: 0 12px 12px 12px;
+  }
+  .content .statistic .statistic__container .statistic__info-2 {
+    margin: 0;
+    padding: 0 12px 12px 12px;
+  }
+  .content .statistic .statistic__container .statistic__info-3 {
+    padding: 5px 5px;
+    margin: 0 9px 0 12px;
+  }
+  .content .statistic .statistic__container .statistic__info-4 {
+    text-align: center;
+    width: 140px;
+    margin: 0 25px;
+    margin-top: 10px;
+    padding: 0 5px;
+  }
+}
+@media (max-width: 396px) {
+  .content .statistic {
+    padding: 40px 0;
+  }
+  .content .statistic .statistic__container {
+    max-width: 320px;
+  }
+  .content .statistic .statistic__container .statistic__info {
+    justify-content: center;
+  }
+  .content .statistic .statistic__container .statistic__info img {
+    width: 85px;
+    height: 60px;
+  }
+  .content .statistic .statistic__container .statistic__info h2 {
+    font: bold 16px "Open Sans", sans-serif;
+    margin: 6px 0 6px 0;
+  }
+  .content .statistic .statistic__container .statistic__info p {
+    font: 12px "Open Sans", sans-serif;
+  }
+  .content .statistic .statistic__container .statistic__info-1 {
+    margin: 0;
+    padding: 0 9px 10px 9px;
+  }
+  .content .statistic .statistic__container .statistic__info-2 {
+    margin: 0;
+    padding: 0 9px 10px 9px;
+  }
+  .content .statistic .statistic__container .statistic__info-3 {
+    padding: 5px 5px;
+    margin: 0 15px 0 5px;
+  }
+  .content .statistic .statistic__container .statistic__info-4 {
+    text-align: center;
+    width: 120px;
+    margin: 0 15px;
+    margin-top: 10px;
+    padding: 0 5px;
+  }
+}
 .comments {
   width: 100%;
   padding-top: 66px;
@@ -869,264 +1298,18 @@ h6 {
     padding: 0;
   }
 }
-@media (max-width: 1440px) {
-  .register__container {
-    max-width: min(1250px, 100%);
-  }
-}
 @media (max-width: 1250px) {
-  .register__container {
-    max-width: min(992px, 100%);
-  }
-  .statistic {
-    padding: 45px 0;
-  }
-  .statistic__container {
-    max-width: min(992px, 100%);
-  }
-  .statistic__container .statistic__info img {
-    width: 85px;
-    height: 60px;
-  }
-  .statistic__container .statistic__info h2 {
-    font: bold 22px "Open Sans", sans-serif;
-    margin: 14px 0 6px 0;
-  }
-  .statistic__container .statistic__info p {
-    font: 14px "Open Sans", sans-serif;
-  }
-  .statistic__container .statistic__info-1 {
-    margin: 0 -8px 0 68px;
-  }
-  .statistic__container .statistic__info-2 {
-    margin: 0 0 0 19px;
-  }
-  .statistic__container .statistic__info-3 {
-    margin: 0 -17px 0 24px;
-  }
-  .statistic__container .statistic__info-4 {
-    margin: 0 -5px 0 0;
-  }
-  .register__info {
-    margin: -1.5em 0 0 -1.2em;
-    padding: 0 15px;
-  }
-  .register__info-h {
-    font: 700 28px "Open Sans", sans-serif;
-    line-height: 2.4em;
-  }
-  .register__info-p {
-    font: 14px "Open Sans", sans-serif;
-    line-height: 26px;
-    padding: 0 2em;
-  }
-  .register__form-input #register__choise,
-  .register__form-input #register__email,
-  .register__form-input #register__lastname,
-  .register__form-input #register__name,
-  .register__form-input #register__phone {
-    width: 475px;
-  }
-  #register__submit {
-    width: 310px;
+  .content {
+    margin-top: 100px;
   }
 }
 @media (max-width: 992px) {
   .content {
     margin-top: 84px;
   }
-  .content .statistic__container {
-    max-width: min(792px, 100%);
-  }
-  .content .statistic__container .statistic__info img {
-    width: 85px;
-    height: 60px;
-  }
-  .content .statistic__container .statistic__info h2 {
-    font: bold 18px "Open Sans", sans-serif;
-    margin: 14px 0 6px 0;
-  }
-  .content .statistic__container .statistic__info p {
-    font: 12px "Open Sans", sans-serif;
-  }
-  .content .statistic__container .statistic__info-1 {
-    margin: 6px 0 13px;
-  }
-  .content .statistic__container .statistic__info-2 {
-    margin: 0 6px 0 9px;
-  }
-  .content .statistic__container .statistic__info-3 {
-    margin: 0 6px 0 11px;
-  }
-  .content .statistic__container .statistic__info-4 {
-    margin: 0 -5px 0 0;
-  }
-  .content .register {
-    padding-top: 40px;
-  }
-  .content .register__container {
-    max-width: min(792px, 100%);
-  }
-  .content .register__container .register__block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .register__info {
-    margin: -1.5em 0 40px 0;
-    padding: 0 15px;
-  }
-  .register__info-h {
-    font: 700 28px "Open Sans", sans-serif;
-    line-height: 2.4em;
-  }
-  .register__info-p {
-    font: 14px "Open Sans", sans-serif;
-    line-height: 26px;
-    padding: 0 2.8em;
-  }
-  .register__form {
-    align-items: center;
-  }
-  .register__form-input #register__choise,
-  .register__form-input #register__email,
-  .register__form-input #register__lastname,
-  .register__form-input #register__name,
-  .register__form-input #register__phone {
-    width: 450px;
-  }
-  #register__submit {
-    width: 290px;
-  }
 }
 @media (max-width: 798px) {
   .content {
     margin-top: 70px;
-  }
-  .content .register {
-    padding-top: 40px;
-  }
-  .content .register__container {
-    max-width: min(697px, 100%);
-  }
-  .register__info {
-    margin: -1.5em 0 50px -1.2em;
-    padding: 0 15px;
-  }
-  .register__info-p {
-    padding: 0 2.4em;
-  }
-}
-@media (max-width: 697px) {
-  .content .register {
-    padding-top: 40px;
-  }
-  .content .register__container {
-    max-width: min(512px, 100%);
-  }
-  .register__info {
-    margin: -1em 0 40px 0;
-    padding: 0;
-  }
-  .register__info-h {
-    font: 700 28px "Open Sans", sans-serif;
-    line-height: 1.4em;
-    margin-bottom: 10px;
-  }
-  .register__info-p {
-    font: 14px "Open Sans", sans-serif;
-    line-height: 26px;
-    padding: 0 5px;
-  }
-  .register__form {
-    align-items: center;
-  }
-  .register__form-input #register__choise,
-  .register__form-input #register__email,
-  .register__form-input #register__lastname,
-  .register__form-input #register__name,
-  .register__form-input #register__phone {
-    width: 350px;
-    height: 46px;
-  }
-  #register__submit {
-    width: 280px;
-  }
-}
-@media (max-width: 512px) {
-  .content .statistic {
-    padding: 30px 0;
-  }
-  .content .statistic__container {
-    max-width: 320px;
-  }
-  .content .statistic__container .statistic__info {
-    justify-content: center;
-  }
-  .content .statistic__container .statistic__info img {
-    width: 85px;
-    height: 60px;
-  }
-  .content .statistic__container .statistic__info h2 {
-    font: bold 16px "Open Sans", sans-serif;
-    margin: 6px 0 6px 0;
-  }
-  .content .statistic__container .statistic__info p {
-    font: 12px "Open Sans", sans-serif;
-  }
-  .content .statistic__container .statistic__info-1 {
-    padding: 10px 7px;
-    margin: 0;
-  }
-  .content .statistic__container .statistic__info-2 {
-    padding: 10px 7px;
-    margin: 0;
-  }
-  .content .statistic__container .statistic__info-3 {
-    padding: 10px 7px;
-    margin: 0;
-  }
-  .content .statistic__container .statistic__info-4 {
-    text-align: center;
-    width: 150px;
-    padding: 10px 7px 10px 10px;
-  }
-  .content .register {
-    padding-top: 40px;
-  }
-  .content .register__container {
-    max-width: 320px;
-  }
-  .register__info {
-    margin: -0.7em 0 50px 0;
-    padding: 0;
-  }
-  .register__info-h {
-    font: 700 22px "Open Sans", sans-serif;
-    line-height: 1.4em;
-    margin-bottom: 18px;
-  }
-  .register__info-p {
-    font: 14px "Open Sans", sans-serif;
-    line-height: 1.8em;
-    letter-spacing: 0;
-    padding: 0;
-  }
-  .register__form {
-    align-items: center;
-  }
-  .register__form-input #register__choise,
-  .register__form-input #register__email,
-  .register__form-input #register__lastname,
-  .register__form-input #register__name,
-  .register__form-input #register__phone {
-    width: 290px;
-    height: 42px;
-  }
-  .register__form-application .register__label-checkbox .register__required {
-    top: 22px;
-  }
-  #register__submit {
-    width: 280px;
   }
 }

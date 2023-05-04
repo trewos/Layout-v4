@@ -7,3 +7,19 @@
 @import "scss/layout/part-of-contents/statistic";
 @import "scss/layout/part-of-contents/comments";
 @import "scss/layout/part-of-contents/video";
+
+@media (max-width: 1250px) {
+  .content {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 992px) {
+  .content {
+    margin-top: 84px
+  }
+}
+@media (max-width: 798px) {
+  .content {
+    margin-top: 70px;
+  }
+}

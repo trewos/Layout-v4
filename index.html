@@ -22,19 +22,19 @@
                             <a href="#" class="header__menu-list-link">Головна</a>
                         </li>
                         <li class="header__menu-list-item">
-                            <a href="#" class="header__menu-list-link">Програма курсу</a>
+                            <a href="#course" class="header__menu-list-link"  onclick="smoothScroll(event, 'course')">Програма курсу</a>
                         </li>
                         <li class="header__menu-list-item">
-                            <a href="#" class="header__menu-list-link">Відгуки про курс</a>
+                            <a href="#comments" class="header__menu-list-link"  onclick="smoothScroll(event, 'comments')">Відгуки про курс</a>
                         </li>
                         <li class="header__menu-list-item">
-                            <a href="#" class="header__menu-list-link">Відео</a>
+                            <a href="#video" class="header__menu-list-link"  onclick="smoothScroll(event, 'video')">Відео</a>
                         </li>
                         <li class="header__menu-list-item">
                             <a href="#" class="header__menu-list-link">Ментори</a>
                         </li>
                         <li class="header__menu-list-item">
-                            <a href="#" class="header__menu-list-link header__menu-list-link-application">Подати
+                            <a href="#register" class="header__menu-list-link header__menu-list-link-application"  onclick="smoothScroll(event, 'register')">Подати
                                 заявку</a>
                         </li>
                     </ul>
@@ -43,12 +43,12 @@
         </div>
     </header>
     <div class="content">
-        <div class="register">
+        <form class="register" id="register" >
             <div class="register__container">
                 <div class="register__block">
                     <div class="register__info">
-                        <h1 class="register__info-h">Курси програмування у Луцьку</h1>
-                        <p class="register__info-p">Сфера IT розвивається максимально швидко. Зараз дуже популярно
+                        <h1 class="register__info-title">Курси програмування у Луцьку</h1>
+                        <p class="register__info-text">Сфера IT розвивається максимально швидко. Зараз дуже популярно
                             здобувати освіту, що повязана з ІТ. Існує лише одна проблема - брак дійсно кваліфікованих
                             спеціалістів в Україні. Під час навчання в університеті ми отримуємо мало практики i
                             "живих", реальних кейсів. IТ школа ОхIT створила таку методику навчання, при якій за
@@ -56,48 +56,48 @@
                             курсах з програмування в Луцьку. Старт наступного курсу 3 серпня.</p>
                     </div>
                     <div class="register__form">
-                        <h2 class="register__form-h">Зареєструватися на курси</h2>
+                        <h2 class="register__form-title">Зареєструватися на курси</h2>
                         <div class="register__form-input">
-                            <label class="register__label" for="register__name">Ім'я <span
-                                    class="register__required">*</span></label> <input type="text" id="register__name"
+                            <label class="register__form-input-label" for="register__name">Ім'я <span
+                                    class="register__form-input-label-required">*</span></label> <input type="text" id="register__name"
                                                                                        name="register__name"
                                                                                        pattern="[А-ЩЬЮЯҐЄІЇа-щьюяґєії]*"
                                                                                        placeholder="Ім'я" required="">
-                            <label class="register__label" for="register__lastname">Прізвище <span
-                                    class="register__required">*</span></label> <input type="text"
+                            <label class="register__form-input-label" for="register__lastname">Прізвище <span
+                                    class="register__form-input-label-required">*</span></label> <input type="text"
                                                                                        id="register__lastname"
                                                                                        name="register__lastname"
                                                                                        pattern="[А-ЩЬЮЯҐЄІЇа-щьюяґєії]*"
                                                                                        placeholder="Прізвище"
                                                                                        required=""> <label
-                                class="register__label" for="register__choise">Мене більше цікавить <span
-                                class="register__required">*</span></label> <input type="text" id="register__choise"
+                                class="register__form-input-label" for="register__choise">Мене більше цікавить <span
+                                class="register__form-input-label-required">*</span></label> <input type="text" id="register__choise"
                                                                                    name="register__choise"
                                                                                    pattern="^(developer|QA)$"
                                                                                    placeholder="developer or QA"
                                                                                    required=""> <label
-                                class="register__label" for="register__phone">Номер телефону <span
-                                class="register__required">*</span></label> <input type="tel" id="register__phone"
+                                class="register__form-input-label" for="register__phone">Номер телефону <span
+                                class="register__form-input-label-required">*</span></label> <input type="tel" id="register__phone"
                                                                                    name="register__phone"
-                                                                                   pattern="\+38 \[0-9]{3}\ [0-9]{2}\ [0-9]{2}\ [0-9]{3}"
+                                                                                   pattern="\+38\s\d{3}\s\d{2}\s\d{2}\s\d{3}"
                                                                                    placeholder="Номер телефону: +38 ХХХ ХХ ХХ ХХХ"
                                                                                    required=""> <label
-                                class="register__label" for="register__email">Email <span
-                                class="register__required">*</span></label> <input type="email" id="register__email"
+                                class="register__form-input-label" for="register__email">Email <span
+                                class="register__form-input-label-required">*</span></label> <input type="email" id="register__email"
                                                                                    name="register__email"
                                                                                    placeholder="Email" required="">
-                            <div class="register__form-application">
+                            <div class="register__form-input-application">
                                 <input type="checkbox" id="register__checkbox" name="register__checkbox" required="">
-                                <label class="register__label-checkbox" for="register__checkbox">Я погоджуюся із<a
-                                        href="#">Політикою Конфіденційності</a><span class="register__required">*</span></label>
+                                <label class="register__form-input-label-checkbox" for="register__checkbox">Я погоджуюся із<a
+                                        href="#">Політикою Конфіденційності</a><span class="register__form-input-label-required">*</span></label>
                             </div>
                             <input type="submit" id="register__submit" value="Зареєструватися зараз">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="course">
+        </form>
+        <div class="course" id="course">
             <div class="course__container">
                 <div class="course__block">
                     <h1 class="course-title">Курс «Розробка сайтів»</h1>
@@ -127,7 +127,7 @@
                 </div>
             </div>
         </div>
-        <div class="statistic">
+        <div class="statistic" id="statistic">
             <div class="statistic__container">
                 <div class="statistic__info">
                     <div class="statistic__info-1">
@@ -153,7 +153,7 @@
                 </div>
             </div>
         </div>
-        <div class="comments">
+        <div class="comments" id="comments">
             <div class="comments__container">
                 <div class="comments__block">
                     <h1 class="comments-title">Що кажуть студенти наших курсів:</h1>
@@ -212,7 +212,7 @@
                 </div>
             </div>
         </div>
-        <div class="video">
+        <div class="video" id="video">
             <div class="video__container">
                 <div class="video__block">
                     <h1 class="video__block-title">Відео</h1>
@@ -221,15 +221,89 @@
                         прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторiччя завдяки
                         виданню зразкiв шрифтів Letraset, які містили уривки з Lorem Ipsum, i вдруге - нещодавно завдяки програмам комп'ютерного верстування на
                         кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.</p>
-                    <iframe class="video__block-content" width="1080" height="520" src="https://www.youtube.com/embed/GFCpOeVnt2M"></iframe>
+                    <iframe class="video__block-content" width="1050" height="550" src="https://www.youtube.com/embed/GFCpOeVnt2M"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="mentors">
+            <div class="mentors__container">
+                <div class="mentors__block">
+                    <h1 class="mentors-title">Ментори</h1>
+                    <div class="mentors__item">
+                        <div class="mentors__item-1">
+                            <img src="img/viktor.png" alt="viktor" class="mentors__item-image">
+                            <div class="mentors__item-info">
+                                <h2 class="mentors__item-title">Виктор</h2>
+                                <p class="mentors__item-description">Майбутнім управлінцям неабияк пощастило адже з ними ділитиметься досвiдом
+                                    управлінець із величезним досвiдом! Сам засновник і СEO компанії InternetDevels, Вiктор
+                                    Левандовський, висловив бажання бути викладачем на курсах проект-менеджменту.
+                                    Віктору є про що розповісти. Він знає все про створення та керування великими
+                                    компаніями, ефективну комунікацію, успішні проекти і багато іншого. При цьому він
+                                    ніколи не скаже, що знае все- саморозвиток для нього не закінчується жодноï хвилини.
+                                    На книжкових Віктора полицях - сотні прочитаних книг про управління і не тільки. А от
+                                    заповiтнi мрiï не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здiйснення.
+                                    Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.
+                                    Буде нестримна, мов гірська лавина, енергiя, помножена на мудрість і досвід. I ви таке
+                                    пропустите? Записуйтесь уже зараз!</p>
+                            </div>
+                        </div>
+                        <div class="mentors__item-1">
+                            <img src="img/vova.png" alt="vova" class="mentors__item-image">
+                            <div class="mentors__item-info">
+                                <h2 class="mentors__item-title">Вова</h2>
+                                <p class="mentors__item-description">Майбутнім управлінцям неабияк пощастило адже з ними ділитиметься досвiдом
+                                    управлінець із величезним досвiдом! Сам засновник і СEO компанії InternetDevels, Вiктор
+                                    Левандовський, висловив бажання бути викладачем на курсах проект-менеджменту.
+                                    Віктору є про що розповісти. Він знає все про створення та керування великими
+                                    компаніями, ефективну комунікацію, успішні проекти і багато іншого. При цьому він
+                                    ніколи не скаже, що знае все- саморозвиток для нього не закінчується жодноï хвилини.
+                                    На книжкових Віктора полицях - сотні прочитаних книг про управління і не тільки. А от
+                                    заповiтнi мрiï не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здiйснення.
+                                    Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.
+                                    Буде нестримна, мов гірська лавина, енергiя, помножена на мудрість і досвід. I ви таке
+                                    пропустите? Записуйтесь уже зараз!</p>
+                            </div>
+                        </div>
+                        <div class="mentors__item-1">
+                            <img src="img/mark.png.png" alt="mark" class="mentors__item-image">
+                            <div class="mentors__item-info">
+                                <h2 class="mentors__item-title">Марк</h2>
+                                <p class="mentors__item-description">Майбутнім управлінцям неабияк пощастило адже з ними ділитиметься досвiдом
+                                    управлінець із величезним досвiдом! Сам засновник і СEO компанії InternetDevels, Вiктор
+                                    Левандовський, висловив бажання бути викладачем на курсах проект-менеджменту.
+                                    Віктору є про що розповісти. Він знає все про створення та керування великими
+                                    компаніями, ефективну комунікацію, успішні проекти і багато іншого. При цьому він
+                                    ніколи не скаже, що знае все- саморозвиток для нього не закінчується жодноï хвилини.
+                                    На книжкових Віктора полицях - сотні прочитаних книг про управління і не тільки. А от
+                                    заповiтнi мрiï не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здiйснення.
+                                    Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.
+                                    Буде нестримна, мов гірська лавина, енергiя, помножена на мудрість і досвід. I ви таке
+                                    пропустите? Записуйтесь уже зараз!</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-</div>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
+<script>
+    function smoothScroll(event, target) {
+        event.preventDefault();
+        const element = document.getElementById(target);
+        const offsetTop = element.offsetTop;
+        const offsetHeight = element.offsetHeight;
+        const windowHeight = window.innerHeight;
+        const distance = offsetTop - ((windowHeight - offsetHeight) / 2);
+        window.scroll({
+            top: distance,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+</script>
 </body>
 </html>
