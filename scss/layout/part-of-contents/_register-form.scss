@@ -12,9 +12,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 0 15px;
-
       /* Content Left */
-
       .register__info {
         margin: 36px 0 0 -18px;
         text-align: center;
@@ -35,7 +33,6 @@
       }
 
       /* Registration Form */
-
       .register__form {
         display: flex;
         flex-direction: column;
@@ -69,11 +66,7 @@
             }
           }
 
-          #register__choise,
-          #register__email,
-          #register__lastname,
-          #register__name,
-          #register__phone {
+          #register__choise, #register__email, #register__lastname, #register__name, #register__phone {
             padding: 15px;
             margin: 3px 0 8px 0;
             width: 590px;
@@ -93,7 +86,6 @@
           }
 
           /* Checkbox Setting's */
-
           .register__form-input-application {
             display: inline-flex;
             align-items: center;
@@ -125,7 +117,6 @@
           }
 
           /* Submit Button */
-
           #register__submit {
             margin: 0 auto 29px auto;
             padding: 10px 15px;
@@ -149,31 +140,24 @@
   }
 }
 
-
 @media (max-width: 1440px) {
   .content {
-
     .register {
-
       .register__container {
         max-width: min(1250px, 100%);
-
       }
     }
   }
 }
+
 @media (max-width: 1250px) {
   .content {
-
     .register {
-
       .register__container {
         max-width: min(992px, 100%);
 
         .register__block {
-
           /* Content Left */
-
           .register__info {
             margin: 36px 0 0 -18px;
             text-align: center;
@@ -194,7 +178,6 @@
           }
 
           /* Registration Form */
-
           .register__form {
             margin-top: -2px;
 
@@ -216,11 +199,7 @@
                 }
               }
 
-              #register__choise,
-              #register__email,
-              #register__lastname,
-              #register__name,
-              #register__phone {
+              #register__choise, #register__email, #register__lastname, #register__name, #register__phone {
                 width: 475px;
               }
 
@@ -257,10 +236,9 @@
     }
   }
 }
+
 @media (max-width: 992px) {
-
   .content {
-
     .register {
       padding-top: 30px;
 
@@ -269,9 +247,7 @@
 
         .register__block {
           flex-direction: column;
-
           /* Content Left */
-
           .register__info {
             margin: 26px 0 40px 0;
 
@@ -291,7 +267,6 @@
           }
 
           /* Registration Form */
-
           .register__form {
             margin-top: -2px;
             align-items: center;
@@ -314,11 +289,7 @@
                 }
               }
 
-              #register__choise,
-              #register__email,
-              #register__lastname,
-              #register__name,
-              #register__phone {
+              #register__choise, #register__email, #register__lastname, #register__name, #register__phone {
                 width: 450px;
               }
 
@@ -355,9 +326,9 @@
     }
   }
 }
+
 @media (max-width: 798px) {
   .content {
-
     .register {
       padding-top: 20px;
 
@@ -365,9 +336,7 @@
         max-width: min(697px, 100%);
 
         .register__block {
-
           /* Content Left */
-
           .register__info {
             margin: 13px 0 50px 0;
           }
@@ -376,21 +345,16 @@
     }
   }
 }
+
 @media (max-width: 697px) {
-
   .content {
-
     .register {
-
       .register__container {
         max-width: min(497px, 100%);
 
         .register__block {
-
           /* Content Left */
-
           .register__info {
-
             .register__info-title {
               font: $font-h1-small;
               letter-spacing: 2px;
@@ -407,7 +371,6 @@
           }
 
           /* Registration Form */
-
           .register__form {
             margin-top: -2px;
             align-items: center;
@@ -430,11 +393,7 @@
                 }
               }
 
-              #register__choise,
-              #register__email,
-              #register__lastname,
-              #register__name,
-              #register__phone {
+              #register__choise, #register__email, #register__lastname, #register__name, #register__phone {
                 width: 350px;
                 height: 46px;
               }
@@ -472,10 +431,9 @@
     }
   }
 }
+
 @media (max-width: 497px) {
-
   .content {
-
     .register {
       padding-top: 20px;
 
@@ -483,9 +441,7 @@
         max-width: 320px;
 
         .register__block {
-
           /* Content Left */
-
           .register__info {
             margin-bottom: 55px;
 
@@ -505,7 +461,6 @@
           }
 
           /* Registration Form */
-
           .register__form {
             align-items: center;
 
@@ -527,11 +482,7 @@
                 }
               }
 
-              #register__choise,
-              #register__email,
-              #register__lastname,
-              #register__name,
-              #register__phone {
+              #register__choise, #register__email, #register__lastname, #register__name, #register__phone {
                 width: 290px;
                 height: 42px;
               }
@@ -559,9 +510,8 @@
                 }
               }
 
-                #register__submit {
-                  width: 280px;
-                }
+              #register__submit {
+                width: 280px;
               }
             }
           }
@@ -569,3 +519,4 @@
       }
     }
   }
+}

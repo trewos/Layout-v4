@@ -6,8 +6,9 @@
   font-weight: 300;
   font-style: normal;
 }
+
 @import "scss/sass-utils/variable";
 @import "scss/base/nullstyle";
 @import "scss/layout/header";
 @import "scss/layout/content";
-@import "scss/base/media";
+@import "scss/layout/footer";

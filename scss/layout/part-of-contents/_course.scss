@@ -46,7 +46,7 @@
           align-items: center;
           text-align: center;
 
-         .course__item-title {
+          .course__item-title {
             font: $font-h1-course;
             padding: 18px 0;
             margin-bottom: 30px;
@@ -65,21 +65,19 @@
     }
   }
 }
+
 @media (max-width: 1440px) {
- .content {
-
-   .course {
-
-     .course__container {
-       max-width: min(1250px, 100%);
-
-     }
-   }
- }
+  .content {
+    .course {
+      .course__container {
+        max-width: min(1250px, 100%);
+      }
+    }
+  }
 }
+
 @media (max-width: 1250px) {
   .content {
-
     .course {
       margin-bottom: 80px;
 
@@ -87,16 +85,13 @@
         max-width: min(992px, 100%);
 
         .course__block {
-
           .course-title {
             font: $font-h1-small;
             margin-bottom: 24px;
           }
 
           .course__item {
-
             .slick-slide {
-
               .course__item-title {
                 font: $font-h2-course;
                 padding: 16px 0 14px 0;
@@ -118,9 +113,9 @@
     }
   }
 }
+
 @media (max-width: 992px) {
   .content {
-
     .course {
       padding-top: 40px;
       margin-bottom: 60px;
@@ -129,15 +124,12 @@
         max-width: min(798px, 100%);
 
         .course__block {
-
           .course-title {
-            font: $font-h1-smaller;
+            font: $font-h1-small;
             margin-bottom: 26px
-
           }
 
           .course__item {
-
             .slick-dots li {
               list-style: none;
               padding: 0;
@@ -145,7 +137,6 @@
             }
 
             .slick-slide {
-
               .course__item-description {
                 padding: 0 15px;
                 margin-bottom: 42px;
@@ -157,9 +148,9 @@
     }
   }
 }
+
 @media (max-width: 798px) {
   .content {
-
     .course {
       padding-top: 40px;
 
@@ -167,7 +158,6 @@
         max-width: min(497px, 100%);
 
         .course__block {
-
           .course-title {
             font: $font-h1-mobile;
             letter-spacing: 0.075em;
@@ -175,7 +165,6 @@
           }
 
           .course__item {
-
             .slick-slide {
               padding: 0 40px;
 
@@ -201,9 +190,9 @@
     }
   }
 }
+
 @media (max-width: 697px) {
   .content {
-
     .course {
       padding-top: 40px;
 
@@ -213,9 +202,9 @@
     }
   }
 }
+
 @media (max-width: 497px) {
   .content {
-
     .course {
       padding-top: 68px;
       margin-bottom: 32px;
@@ -224,7 +213,6 @@
         max-width: 320px;
 
         .course__block {
-
           .course-title {
             font: $font-h1-mobile;
             letter-spacing: 0.075em;
@@ -232,13 +220,12 @@
           }
 
           .course__item {
-
             .slick-slide {
               padding: 0 15px;
 
               .course__item-title {
                 font: $font-h2-course;
-                padding: 20px 0  5px 0;
+                padding: 20px 0 5px 0;
                 line-height: 23px;
                 margin-bottom: 14px;
                 border-bottom: 1px solid #43a0de;

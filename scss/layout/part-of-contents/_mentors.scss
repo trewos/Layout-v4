@@ -1,0 +1,392 @@
+@import "scss/components/slider-dots";
+
+.mentors {
+  width: 100%;
+  padding-top: 66px;
+
+  .mentors__container {
+    max-width: min(1250px, 100%);
+    margin: 0 auto;
+
+    .mentors__block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 15px;
+
+      .mentors-title {
+        font: bold 33px "Open Sans", sans-serif;
+        letter-spacing: 1px;
+        margin-bottom: 12px;
+      }
+
+      .mentors__item {
+        width: 100%;
+
+        .slick-list {
+          overflow: hidden;
+        }
+
+        .slick-slide {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .slick-track {
+          display: flex;
+          justify-content: center;
+          overflow: hidden;
+          width: 100%;
+        }
+
+        img {
+          display: flex;
+          width: 360px;
+          height: 360px;
+          margin-left: 75px;
+        }
+
+        .mentors__item-info {
+          display: flex;
+          flex-direction: column;
+          margin-left: 100px;
+          text-align: left;
+
+          .mentors__item-title {
+            font: bold 20px "Open Sans", sans-serif;
+            padding: 18px 0 12px 0;
+            margin-bottom: 0;
+            color: #3498db;
+          }
+
+          .mentors__item-description {
+            font: 16px "Open Sans", sans-serif;
+            color: #c3c3c3;
+            line-height: 25px;
+            padding: 5px 0 5px 0;
+            margin: 0 30px 0 0;
+
+            &:first-of-type {
+              padding-top: 34px;
+              border-top: 1px solid #f7f7f7;
+            }
+
+            &:last-of-type {
+              margin-bottom: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .content {
+    .mentors {
+      .mentors__container {
+        max-width: min(992px, 100%);
+
+        .mentors__block {
+          .mentors-title {
+            font: bold 28px "Open Sans", sans-serif;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+          }
+
+          .mentors__item {
+            .slick-list {
+            }
+
+            .slick-slide {
+              align-items: center;
+            }
+
+            .slick-track {
+            }
+
+            img {
+              display: flex;
+              width: 300px;
+              height: 300px;
+              margin-left: 60px;
+            }
+
+            .mentors__item-info {
+              margin-left: 85px;
+
+              .mentors__item-title {
+                font: bold 20px "Open Sans", sans-serif;
+                padding: 18px 0 12px 0;
+              }
+
+              .mentors__item-description {
+                font: 16px "Open Sans", sans-serif;
+                line-height: 25px;
+                padding: 5px 0 5px 0;
+                margin: 0 30px 0 0;
+
+                &:first-of-type {
+                  padding-top: 34px;
+                }
+
+                &:last-of-type {
+                  margin-bottom: 6px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .content {
+    .mentors {
+      padding-top: 32px;
+
+      .mentors__container {
+        max-width: min(798px, 100%);
+
+        .mentors__block {
+          .mentors-title {
+            font: bold 28px "Open Sans", sans-serif;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+          }
+
+          .mentors__item {
+            width: 100%;
+
+            .slick-list {
+              overflow: hidden;
+            }
+
+            .slick-slide {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            }
+
+            .slick-track {
+              display: flex;
+              justify-content: center;
+              overflow: hidden;
+              width: 100%;
+            }
+
+            img {
+              display: flex;
+              width: 280px;
+              height: 280px;
+              margin: 0;
+            }
+
+            .mentors__item-info {
+              display: flex;
+              flex-direction: column;
+              margin: 0;
+              text-align: center;
+
+              .mentors__item-title {
+                font: bold 20px "Open Sans", sans-serif;
+                margin-bottom: 0;
+                color: #3498db;
+              }
+
+              .mentors__item-description {
+                font: 16px "Open Sans", sans-serif;
+                color: #c3c3c3;
+                line-height: 25px;
+                padding: 5px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 798px) {
+  .content {
+    .mentors {
+      padding-top: 44px;
+
+      .mentors__container {
+        max-width: min(697px, 100%);
+
+        .mentors__block {
+          .mentors-title {
+            font: bold 22px "Open Sans", sans-serif;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+          }
+
+          .mentors__item {
+            width: 100%;
+
+            .slick-list {
+              overflow: hidden;
+            }
+
+            .slick-slide {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            }
+
+            .slick-track {
+              display: flex;
+              justify-content: center;
+              overflow: hidden;
+              width: 100%;
+            }
+
+            img {
+              display: flex;
+              width: 280px;
+              height: 280px;
+              margin: 0;
+            }
+
+            .mentors__item-info {
+              display: flex;
+              flex-direction: column;
+              margin: 0;
+              text-align: center;
+
+              .mentors__item-title {
+                font: bold 20px "Open Sans", sans-serif;
+                margin-bottom: 0;
+                color: #3498db;
+              }
+
+              .mentors__item-description {
+                font: 16px "Open Sans", sans-serif;
+                color: #c3c3c3;
+                line-height: 25px;
+                padding: 5px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 697px) {
+  .content {
+    .mentors {
+      .mentors__container {
+        max-width: min(497px, 100%);
+
+        .mentors__block {
+          .mentors__item {
+            img {
+              display: flex;
+              width: 280px;
+              height: 280px;
+            }
+
+            .mentors__item-title {
+              padding: 12px 0 6px 0;
+            }
+
+            .mentors__item-description {
+              &:first-of-type {
+                padding-top: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 497px) {
+  .content {
+    .mentors {
+      padding-top: 32px;
+
+      .mentors__container {
+        max-width: 320px;
+
+        .mentors__block {
+          .mentors-title {
+            font: bold 22px "Open Sans", sans-serif;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+          }
+
+          .mentors__item {
+            width: 100%;
+
+            .slick-list {
+              overflow: hidden;
+            }
+
+            .slick-slide {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            }
+
+            .slick-track {
+              display: flex;
+              justify-content: center;
+              overflow: hidden;
+              width: 100%;
+            }
+
+            img {
+              display: flex;
+              width: 143px;
+              height: 150px;
+              margin: 0;
+            }
+
+            .mentors__item-info {
+              display: flex;
+              flex-direction: column;
+              margin: 0;
+              text-align: center;
+
+              .mentors__item-title {
+                font: bold 18px "Open Sans", sans-serif;
+                padding: 20px 0 0 0;
+                margin-bottom: 0;
+                color: #3498db;
+              }
+
+              .mentors__item-description {
+                font: 14px "Open Sans", sans-serif;
+                color: #c3c3c3;
+                line-height: 22px;
+                padding: 5px 0;
+                margin: 0 0 0 2px;
+
+                &:first-of-type {
+                  padding-top: 20px;
+                  border-top: 1px solid #f7f7f7;
+                }
+
+                &:last-of-type {
+                  margin-bottom: 6px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

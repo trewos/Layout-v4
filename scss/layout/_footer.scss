@@ -1,43 +1,42 @@
-.statistic {
-  padding: 80px 0;
+.footer {
+  padding: 20px 0;
   width: 100%;
-  background-color: #3498db;
 
-  .statistic__container {
+  .footer__color {
+    display: flex;
+    width: 100%;
+    background-color: #3498db;
+  }
+  .footer__container {
     max-width: min(1250px, 100%);
     margin: 0 auto;
 
-    .statistic__info {
+    .footer__contact {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      padding: 0 15px;
-
-      & img {
-        width: 85px;
-        height: 60px;
-      }
+      text-align: center;
+      padding: 24px 15px;
 
       & h2 {
-        font: bold 28px "Open Sans", sans-serif;
+        font: bold 18px "Open Sans", sans-serif;
         color: #ffffff;
-        margin: 20px 0 10px 0;
+        margin: 8px 0 4px 0;
       }
 
       & p {
-        font: $font;
+        font: $font-small;
         color: #ffffff;
       }
 
       &-1 {
         padding: 0 15px;
-        margin-left: 65px;
+        margin-left: 65px ;
         display: flex;
         flex-direction: column;
         align-items: center;
       }
-
       &-2 {
         padding: 0 15px;
         margin-left: 50px;
@@ -45,7 +44,6 @@
         flex-direction: column;
         align-items: center;
       }
-
       &-3 {
         margin-left: 50px;
         padding: 0 15px;
@@ -53,7 +51,6 @@
         flex-direction: column;
         align-items: center;
       }
-
       &-4 {
         padding: 0 15px;
         display: flex;
@@ -63,16 +60,17 @@
     }
   }
 }
-
 @media (max-width: 1250px) {
   .content {
-    .statistic {
+
+    .footer {
       padding: 55px 0;
 
-      .statistic__container {
+      .footer__container {
         max-width: min(992px, 100%);
 
-        .statistic__info {
+        .footer__contact {
+
           & img {
             width: 85px;
             height: 60px;
@@ -100,24 +98,26 @@
           }
 
           &-4 {
+
           }
         }
       }
     }
   }
 }
-
 @media (max-width: 992px) {
+
   .content {
-    .statistic {
+
+    .footer {
       padding: 40px 0;
       margin: 0 auto;
 
-      .statistic__container {
+      .footer__container {
         max-width: min(396px, 100%);
         margin: 0 auto;
 
-        .statistic__info {
+        .footer__contact {
           justify-content: space-between;
           align-items: center;
           margin: 0 auto;
@@ -149,6 +149,7 @@
           &-3 {
             padding: 5px 5px;
             margin: 0 9px 0 12px;
+
           }
 
           &-4 {
@@ -163,16 +164,17 @@
     }
   }
 }
-
 @media (max-width: 396px) {
+
   .content {
-    .statistic {
+
+    .footer {
       padding: 40px 0;
 
-      .statistic__container {
+      .footer__container {
         max-width: 320px;
 
-        .statistic__info {
+        .footer__contact {
           justify-content: space-between;
 
           & img {
@@ -202,6 +204,7 @@
           &-3 {
             padding: 5px 5px;
             margin: 0 5px 0 10px;
+
           }
 
           &-4 {

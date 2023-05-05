@@ -42,7 +42,18 @@ $(document).ready(function(){
         arrows: false,
         cssEase: 'linear',
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 6000,
+    });
+});
+
+$(document).ready(function(){
+    $('.mentors__item').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 6000,
     });
 });
 
