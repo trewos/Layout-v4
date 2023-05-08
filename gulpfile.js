@@ -1,3 +1,5 @@
+/* Gulp file */
+
 require('globalthis/auto');
 
 const gulp = require('gulp');

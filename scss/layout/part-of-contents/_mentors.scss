@@ -1,4 +1,4 @@
-@import "scss/components/slider-dots";
+/* Mentors slider */
 
 .mentors {
   width: 100%;
@@ -9,14 +9,13 @@
     margin: 0 auto;
 
     .mentors__block {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       align-items: center;
       padding: 0 15px;
 
       .mentors-title {
-        font: bold 33px "Open Sans", sans-serif;
-        letter-spacing: 1px;
+        font: $font-h1;
+        letter-spacing: $spacing;
         margin-bottom: 12px;
       }
 
@@ -48,28 +47,27 @@
         }
 
         .mentors__item-info {
-          display: flex;
-          flex-direction: column;
+          @include flex-column;
           margin-left: 100px;
           text-align: left;
 
           .mentors__item-title {
-            font: bold 20px "Open Sans", sans-serif;
+            font: $font-h2-bolder;
             padding: 18px 0 12px 0;
             margin-bottom: 0;
-            color: #3498db;
+            color: $blue;
           }
 
           .mentors__item-description {
-            font: 16px "Open Sans", sans-serif;
-            color: #c3c3c3;
+            font: $font;
+            color: $gray;
             line-height: 25px;
             padding: 5px 0 5px 0;
             margin: 0 30px 0 0;
 
             &:first-of-type {
               padding-top: 34px;
-              border-top: 1px solid #f7f7f7;
+              border-top: 1px solid $white-2;
             }
 
             &:last-of-type {
@@ -82,6 +80,8 @@
   }
 }
 
+/* Adaptive for mentors slider */
+
 @media (max-width: 1250px) {
   .content {
     .mentors {
@@ -90,8 +90,8 @@
 
         .mentors__block {
           .mentors-title {
-            font: bold 28px "Open Sans", sans-serif;
-            letter-spacing: 1px;
+            font: $font-h1-small;
+            letter-spacing: $spacing;
             margin-bottom: 12px;
           }
 
@@ -117,12 +117,12 @@
               margin-left: 85px;
 
               .mentors__item-title {
-                font: bold 20px "Open Sans", sans-serif;
+                font: $font-h2-bolder;
                 padding: 18px 0 12px 0;
               }
 
               .mentors__item-description {
-                font: 16px "Open Sans", sans-serif;
+                font: $font;
                 line-height: 25px;
                 padding: 5px 0 5px 0;
                 margin: 0 30px 0 0;
@@ -153,8 +153,8 @@
 
         .mentors__block {
           .mentors-title {
-            font: bold 28px "Open Sans", sans-serif;
-            letter-spacing: 1px;
+            font: $font-h1-small;
+            letter-spacing: $spacing;
             margin-bottom: 12px;
           }
 
@@ -166,8 +166,7 @@
             }
 
             .slick-slide {
-              display: flex;
-              flex-direction: column;
+              @include flex-column;
               justify-content: center;
               align-items: center;
             }
@@ -187,20 +186,19 @@
             }
 
             .mentors__item-info {
-              display: flex;
-              flex-direction: column;
+              @include flex-column;
               margin: 0;
               text-align: center;
 
               .mentors__item-title {
-                font: bold 20px "Open Sans", sans-serif;
+                font: $font-h2-bolder;
                 margin-bottom: 0;
-                color: #3498db;
+                color: $blue;
               }
 
               .mentors__item-description {
-                font: 16px "Open Sans", sans-serif;
-                color: #c3c3c3;
+                font: $font;
+                color: $gray;
                 line-height: 25px;
                 padding: 5px 0;
               }
@@ -222,8 +220,8 @@
 
         .mentors__block {
           .mentors-title {
-            font: bold 22px "Open Sans", sans-serif;
-            letter-spacing: 1px;
+            font: $font-h1-mobile;
+            letter-spacing: $spacing;
             margin-bottom: 12px;
           }
 
@@ -235,8 +233,7 @@
             }
 
             .slick-slide {
-              display: flex;
-              flex-direction: column;
+              @include flex-column;
               justify-content: center;
               align-items: center;
             }
@@ -256,20 +253,19 @@
             }
 
             .mentors__item-info {
-              display: flex;
-              flex-direction: column;
+              @include flex-column;
               margin: 0;
               text-align: center;
 
               .mentors__item-title {
-                font: bold 20px "Open Sans", sans-serif;
+                font: $font-h2-bolder;
                 margin-bottom: 0;
-                color: #3498db;
+                color: $blue;
               }
 
               .mentors__item-description {
-                font: 16px "Open Sans", sans-serif;
-                color: #c3c3c3;
+                font: $font;
+                color: $gray;
                 line-height: 25px;
                 padding: 5px 0;
               }
@@ -321,8 +317,8 @@
 
         .mentors__block {
           .mentors-title {
-            font: bold 22px "Open Sans", sans-serif;
-            letter-spacing: 1px;
+            font: $font-h1-mobile;
+            letter-spacing: $spacing;
             margin-bottom: 4px;
           }
 
@@ -334,8 +330,7 @@
             }
 
             .slick-slide {
-              display: flex;
-              flex-direction: column;
+              @include flex-column;
               justify-content: center;
               align-items: center;
             }
@@ -355,28 +350,27 @@
             }
 
             .mentors__item-info {
-              display: flex;
-              flex-direction: column;
+              @include flex-column;
               margin: 0;
               text-align: center;
 
               .mentors__item-title {
-                font: bold 18px "Open Sans", sans-serif;
+                font: $font-h2-bolder-smaller;
                 padding: 20px 0 0 0;
                 margin-bottom: 0;
-                color: #3498db;
+                color: $blue;
               }
 
               .mentors__item-description {
-                font: 14px "Open Sans", sans-serif;
-                color: #c3c3c3;
+                font: $font-small;
+                color: $gray;
                 line-height: 22px;
                 padding: 5px 0;
                 margin: 0 0 0 2px;
 
                 &:first-of-type {
                   padding-top: 20px;
-                  border-top: 1px solid #f7f7f7;
+                  border-top: 1px solid $white-2;
                 }
 
                 &:last-of-type {

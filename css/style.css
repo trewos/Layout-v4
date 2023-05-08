@@ -1,15 +1,29 @@
+/* Fonts */
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/OpenSans-Light.ttf") format("truetype"), url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
 }
-/* Header */
-/* Font for all Layout */
-/* Letter-spacing standard value */
-/* Burger-toggle */
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+}
+/* Color */
+/* Shadow */
+/* Font */
+/* Standart font */
+/* Font h1 */
+/* Font h2 */
+/* Font for application button */
 /* Animation */
-/* Font for h in register */
+/* Burger-toggle */
+/* List padding */
+/* Letter-spacing standard value */
+/* Mixin`s */
+/* Display */
+/* Style CSS reset */
 * {
   padding: 0;
   margin: 0;
@@ -103,6 +117,31 @@ h6 {
   min-width: 0;
 }
 
+/* Slider dots style */
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots li {
+  list-style: none;
+  margin: 0 7px 40px 7px;
+}
+
+.slick-dots button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #b3b3b3;
+  border-radius: 50%;
+}
+
+.slick-active button {
+  background-color: #666666;
+}
+
+/* Header */
 .header {
   position: fixed;
   width: 100%;
@@ -150,7 +189,7 @@ h6 {
   letter-spacing: 0.0235em;
 }
 .header__container .header__block .header__menu .header__menu-list .header__menu-list-item .header__menu-list-link {
-  color: black;
+  color: #000000;
   padding: 10px 20px;
 }
 .header__container .header__block .header__menu .header__menu-list .header__menu-list-item .header__menu-list-link:hover {
@@ -161,13 +200,14 @@ h6 {
   background-color: #337ab7;
   color: #ffffff;
   border-radius: 50px;
-  font-weight: bold;
+  font: bold 14px "Open Sans", sans-serif;
 }
 .header__container .header__block .header__menu .header__menu-list .header__menu-list-item .header__menu-list-link.header__menu-list-link-application:hover {
   background-color: #3498db;
   color: #ffffff;
 }
 
+/* Adaptive for header */
 @media (max-width: 1440px) {
   .header__container {
     max-width: min(1250px, 100%);
@@ -199,6 +239,9 @@ h6 {
 @media (max-width: 798px) {
   .header__container {
     max-width: min(697px, 100%);
+  }
+  .header__container .header__block {
+    /* Burger-menu  setting`s */
   }
   .header__container .header__block .header__logo {
     margin: 5px auto 5px 0;
@@ -289,6 +332,7 @@ h6 {
   margin: 100px auto 0 auto;
 }
 
+/* Registration Form */
 .register {
   width: 100%;
   padding-top: 55px;
@@ -416,6 +460,7 @@ h6 {
   background-color: #3498db;
 }
 
+/* Adaptive for Registration form */
 @media (max-width: 1440px) {
   .content .register .register__container {
     max-width: min(1250px, 100%);
@@ -455,6 +500,8 @@ h6 {
   }
   .content .register .register__container .register__block .register__form-input {
     font: 16px "Open Sans", sans-serif;
+    /* Checkbox Setting's */
+    /* Submit Button */
   }
   .content .register .register__container .register__block .register__form-input .register__form-input-label {
     font: 14px "Open Sans", sans-serif;
@@ -496,6 +543,7 @@ h6 {
     max-width: min(798px, 100%);
   }
   .content .register .register__container .register__block {
+    display: flex;
     flex-direction: column;
     /* Content Left */
     /* Registration Form */
@@ -526,6 +574,8 @@ h6 {
   }
   .content .register .register__container .register__block .register__form-input {
     font: 16px "Open Sans", sans-serif;
+    /* Checkbox Setting's */
+    /* Submit Button */
   }
   .content .register .register__container .register__block .register__form-input .register__form-input-label {
     font: 14px "Open Sans", sans-serif;
@@ -604,6 +654,8 @@ h6 {
   }
   .content .register .register__container .register__block .register__form-input {
     font: 16px "Open Sans", sans-serif;
+    /* Checkbox Setting's */
+    /* Submit Button */
   }
   .content .register .register__container .register__block .register__form-input .register__form-input-label {
     font: 14px "Open Sans", sans-serif;
@@ -674,6 +726,8 @@ h6 {
   }
   .content .register .register__container .register__block .register__form-input {
     font: 16px "Open Sans", sans-serif;
+    /* Checkbox Setting's */
+    /* Submit Button */
   }
   .content .register .register__container .register__block .register__form-input .register__form-input-label {
     font: 14px "Open Sans", sans-serif;
@@ -708,6 +762,7 @@ h6 {
     width: 280px;
   }
 }
+/* Course slider */ /* Slider dots style */
 .slick-dots {
   display: flex;
   justify-content: center;
@@ -774,7 +829,7 @@ h6 {
   text-align: center;
 }
 .course__container .course__block .course__item .slick-slide .course__item-title {
-  font: bold 22px "Open Sans", sans-serif;
+  font: 700 22px "Open Sans", sans-serif;
   padding: 18px 0;
   margin-bottom: 30px;
   letter-spacing: 0.068em;
@@ -787,6 +842,7 @@ h6 {
   padding: 0 32px;
 }
 
+/* Adaptive for course slider */
 @media (max-width: 1440px) {
   .content .course .course__container {
     max-width: min(1250px, 100%);
@@ -908,6 +964,7 @@ h6 {
     margin-bottom: 42px;
   }
 }
+/* Statistic information */
 .statistic {
   padding: 80px 0;
   width: 100%;
@@ -929,7 +986,7 @@ h6 {
   height: 60px;
 }
 .statistic .statistic__container .statistic__info h2 {
-  font: bold 28px "Open Sans", sans-serif;
+  font: 700 28px "Open Sans", sans-serif;
   color: #ffffff;
   margin: 20px 0 10px 0;
 }
@@ -965,6 +1022,7 @@ h6 {
   align-items: center;
 }
 
+/* Adaptive fot statistic information */
 @media (max-width: 1250px) {
   .content .statistic {
     padding: 55px 0;
@@ -1079,6 +1137,7 @@ h6 {
     padding: 0 5px;
   }
 }
+/* Comments slider */
 .comments {
   width: 100%;
   padding-top: 66px;
@@ -1140,19 +1199,20 @@ h6 {
   left: 0;
 }
 .comments__container .comments__block .comments__slider .slick-slide .comments__slider-item .comments__slider-item-person h2 {
-  font: 20px "Open Sans", sans-serif;
+  font: bold 20px "Open Sans", sans-serif;
 }
 .comments__container .comments__block .comments__slider .slick-slide .comments__slider-item .comments__slider-item-person p {
   font: 16px "Open Sans", sans-serif;
   font-style: italic;
 }
 
+/* Adaptive for comments slider */
 @media (max-width: 1250px) {
   .content .comments__container {
     max-width: min(992px, 100%);
   }
   .content .comments__container .comments__block .comments-title {
-    font: bold 28px "Open Sans", sans-serif;
+    font: 700 28px "Open Sans", sans-serif;
   }
   .content .comments__container .comments__block .comments__slider .slick-slide .comments__slider-item {
     margin-bottom: 100px;
@@ -1176,7 +1236,7 @@ h6 {
     height: 28px;
   }
   .content .comments__container .comments__block .comments__slider .slick-slide .comments__slider-item .comments__slider-item-person h2 {
-    font: 18px "Open Sans", sans-serif;
+    font: bold 18px "Open Sans", sans-serif;
   }
   .content .comments__container .comments__block .comments__slider .slick-slide .comments__slider-item .comments__slider-item-person p {
     font: 16px "Open Sans", sans-serif;
@@ -1194,7 +1254,7 @@ h6 {
     padding: 20px 4px 6px 40px;
   }
   .content .comments__container .comments__block .comments__slider .slick-slide .comments__slider-item .comments__slider-item-text .comments__slider-item-comment {
-    font: 18px "Open Sans", sans-serif;
+    font: bold 18px "Open Sans", sans-serif;
     line-height: 32px;
   }
   .content .comments__container .comments__block .comments__slider .slick-slide .comments__slider-item .comments__slider-item-text .right-quote {
@@ -1214,11 +1274,7 @@ h6 {
     height: 26px;
   }
   .content .comments__container .comments__block .comments__slider .slick-slide .comments__slider-item .comments__slider-item-person h2 {
-    font: 18px "Open Sans", sans-serif;
-  }
-  .content .comments__container .comments__block .comments__slider .slick-slide .comments__slider-item .comments__slider-item-person p {
-    font: 16px "Open Sans", sans-serif;
-    font-style: italic;
+    font: bold 18px "Open Sans", sans-serif;
   }
 }
 @media (max-width: 798px) {
@@ -1231,14 +1287,14 @@ h6 {
   }
   .content .comments__container .comments__block .comments-title {
     text-align: center;
-    font: bold 22px "Open Sans", sans-serif;
+    font: 700 22px "Open Sans", sans-serif;
     letter-spacing: 1px;
   }
   .content .comments__container .comments__block .comments__slider .slick-slide .comments__slider-item {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     margin-bottom: 98px;
   }
   .content .comments__container .comments__block .comments__slider .slick-slide .comments__slider-item .comments__slider-item-text {
@@ -1284,9 +1340,9 @@ h6 {
   }
   .content .comments__container .comments__block .comments__slider .slick-slide .comments__slider-item {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     margin-bottom: 98px;
   }
   .content .comments__container .comments__block .comments__slider .slick-slide .comments__slider-item .comments__slider-item-text {
@@ -1318,7 +1374,7 @@ h6 {
     height: 24px;
   }
   .content .comments__container .comments__block .comments__slider .slick-slide .comments__slider-item .comments__slider-item-person h2 {
-    font: 16px "Open Sans", sans-serif;
+    font: bold 16px "Open Sans", sans-serif;
   }
   .content .comments__container .comments__block .comments__slider .slick-slide .comments__slider-item .comments__slider-item-person p {
     font: 14px "Open Sans", sans-serif;
@@ -1340,9 +1396,9 @@ h6 {
   }
   .content .comments__container .comments__block .comments__slider .slick-slide .comments__slider-item {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     margin-bottom: 98px;
   }
   .content .comments__container .comments__block .comments__slider .slick-slide .comments__slider-item .comments__slider-item-text {
@@ -1373,14 +1429,8 @@ h6 {
     width: 24px;
     height: 24px;
   }
-  .content .comments__container .comments__block .comments__slider .slick-slide .comments__slider-item .comments__slider-item-person h2 {
-    font: 16px "Open Sans", sans-serif;
-  }
-  .content .comments__container .comments__block .comments__slider .slick-slide .comments__slider-item .comments__slider-item-person p {
-    font: 14px "Open Sans", sans-serif;
-    font-style: italic;
-  }
 }
+/* Video */
 .video {
   width: 100%;
   padding-top: 66px;
@@ -1416,6 +1466,7 @@ h6 {
   margin-top: auto;
 }
 
+/* Adaptive for video */
 @media (max-width: 1250px) {
   .content .video__container {
     max-width: min(992px, 100%);
@@ -1457,8 +1508,6 @@ h6 {
   }
   .content .video__container .video__block .video__block-content {
     height: 262px;
-    padding: 0;
-    margin-bottom: 67px;
   }
 }
 @media (max-width: 497px) {
@@ -1475,32 +1524,9 @@ h6 {
   }
   .content .video__container .video__block .video__block-content {
     height: 188px;
-    padding: 0;
   }
 }
-.slick-dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.slick-dots li {
-  list-style: none;
-  margin: 0 7px 40px 7px;
-}
-
-.slick-dots button {
-  font-size: 0;
-  width: 12px;
-  height: 12px;
-  background-color: #b3b3b3;
-  border-radius: 50%;
-}
-
-.slick-active button {
-  background-color: #666666;
-}
-
+/* Mentors slider */
 .mentors {
   width: 100%;
   padding-top: 66px;
@@ -1550,7 +1576,7 @@ h6 {
   text-align: left;
 }
 .mentors .mentors__container .mentors__block .mentors__item .mentors__item-info .mentors__item-title {
-  font: bold 20px "Open Sans", sans-serif;
+  font: bold 20px "Open Sans Bold", sans-serif;
   padding: 18px 0 12px 0;
   margin-bottom: 0;
   color: #3498db;
@@ -1570,12 +1596,13 @@ h6 {
   margin-bottom: 6px;
 }
 
+/* Adaptive for mentors slider */
 @media (max-width: 1250px) {
   .content .mentors .mentors__container {
     max-width: min(992px, 100%);
   }
   .content .mentors .mentors__container .mentors__block .mentors-title {
-    font: bold 28px "Open Sans", sans-serif;
+    font: 700 28px "Open Sans", sans-serif;
     letter-spacing: 1px;
     margin-bottom: 12px;
   }
@@ -1592,7 +1619,7 @@ h6 {
     margin-left: 85px;
   }
   .content .mentors .mentors__container .mentors__block .mentors__item .mentors__item-info .mentors__item-title {
-    font: bold 20px "Open Sans", sans-serif;
+    font: bold 20px "Open Sans Bold", sans-serif;
     padding: 18px 0 12px 0;
   }
   .content .mentors .mentors__container .mentors__block .mentors__item .mentors__item-info .mentors__item-description {
@@ -1616,7 +1643,7 @@ h6 {
     max-width: min(798px, 100%);
   }
   .content .mentors .mentors__container .mentors__block .mentors-title {
-    font: bold 28px "Open Sans", sans-serif;
+    font: 700 28px "Open Sans", sans-serif;
     letter-spacing: 1px;
     margin-bottom: 12px;
   }
@@ -1651,7 +1678,7 @@ h6 {
     text-align: center;
   }
   .content .mentors .mentors__container .mentors__block .mentors__item .mentors__item-info .mentors__item-title {
-    font: bold 20px "Open Sans", sans-serif;
+    font: bold 20px "Open Sans Bold", sans-serif;
     margin-bottom: 0;
     color: #3498db;
   }
@@ -1670,7 +1697,7 @@ h6 {
     max-width: min(697px, 100%);
   }
   .content .mentors .mentors__container .mentors__block .mentors-title {
-    font: bold 22px "Open Sans", sans-serif;
+    font: 700 22px "Open Sans", sans-serif;
     letter-spacing: 1px;
     margin-bottom: 12px;
   }
@@ -1705,7 +1732,7 @@ h6 {
     text-align: center;
   }
   .content .mentors .mentors__container .mentors__block .mentors__item .mentors__item-info .mentors__item-title {
-    font: bold 20px "Open Sans", sans-serif;
+    font: bold 20px "Open Sans Bold", sans-serif;
     margin-bottom: 0;
     color: #3498db;
   }
@@ -1740,7 +1767,7 @@ h6 {
     max-width: 320px;
   }
   .content .mentors .mentors__container .mentors__block .mentors-title {
-    font: bold 22px "Open Sans", sans-serif;
+    font: 700 22px "Open Sans", sans-serif;
     letter-spacing: 1px;
     margin-bottom: 4px;
   }
@@ -1775,7 +1802,7 @@ h6 {
     text-align: center;
   }
   .content .mentors .mentors__container .mentors__block .mentors__item .mentors__item-info .mentors__item-title {
-    font: bold 18px "Open Sans", sans-serif;
+    font: bold 18px "Open Sans Bold", sans-serif;
     padding: 20px 0 0 0;
     margin-bottom: 0;
     color: #3498db;
@@ -1810,175 +1837,225 @@ h6 {
     margin-top: 70px;
   }
 }
+/* Footer */
 .footer {
-  padding: 20px 0;
+  padding-top: 20px;
   width: 100%;
+  margin-top: auto;
+  /* Information for document */
 }
 .footer .footer__color {
   display: flex;
   width: 100%;
   background-color: #3498db;
 }
-.footer .footer__container {
+.footer__container {
   max-width: min(1250px, 100%);
   margin: 0 auto;
 }
-.footer .footer__container .footer__contact {
+.footer__container .footer__contact {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   text-align: center;
-  padding: 24px 15px;
+  width: 1130px;
+  padding: 40px 15px;
+  /* Footer contact`s */
 }
-.footer .footer__container .footer__contact h2 {
+.footer__container .footer__contact h2 {
   font: bold 18px "Open Sans", sans-serif;
   color: #ffffff;
   margin: 8px 0 4px 0;
 }
-.footer .footer__container .footer__contact p {
+.footer__container .footer__contact p {
   font: 14px "Open Sans", sans-serif;
   color: #ffffff;
 }
-.footer .footer__container .footer__contact-1 {
-  padding: 0 15px;
-  margin-left: 65px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.footer .footer__container .footer__contact-2 {
-  padding: 0 15px;
-  margin-left: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.footer .footer__container .footer__contact-3 {
-  margin-left: 50px;
+.footer__container .footer__contact-1 {
+  margin-left: 16px;
   padding: 0 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.footer .footer__container .footer__contact-4 {
+.footer__container .footer__contact-2 {
+  margin-left: 42px;
   padding: 0 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.footer__container .footer__contact-3 {
+  margin-left: 24px;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__container .footer__contact-4 {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .footer__company {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 34px;
+  background-color: #ffffff;
+}
+.footer .footer__company a {
+  padding: 12px;
+  color: #000000;
+}
+.footer .footer__company a:first-of-type {
+  color: #3498db;
 }
 
+/* Adaptive for footer */
 @media (max-width: 1250px) {
-  .content .footer {
-    padding: 55px 0;
-  }
-  .content .footer .footer__container {
+  .footer .footer__color .footer__container {
     max-width: min(992px, 100%);
   }
-  .content .footer .footer__container .footer__contact img {
-    width: 85px;
-    height: 60px;
+  .footer .footer__color .footer__container .footer__contact {
+    width: 992px;
+    /* Footer contact`s */
   }
-  .content .footer .footer__container .footer__contact h2 {
-    font: bold 22px "Open Sans", sans-serif;
-    margin: 14px 0 6px 0;
+  .footer .footer__color .footer__container .footer__contact img {
+    height: 55px;
   }
-  .content .footer .footer__container .footer__contact p {
-    font: 14px "Open Sans", sans-serif;
+  .footer .footer__color .footer__container .footer__contact h2 {
+    margin: 6px 0 2px 0;
   }
-  .content .footer .footer__container .footer__contact-1 {
+  .footer .footer__color .footer__container .footer__contact-1 {
     margin-left: 50px;
   }
-  .content .footer .footer__container .footer__contact-2 {
+  .footer .footer__color .footer__container .footer__contact-2 {
     margin-left: 45px;
   }
-  .content .footer .footer__container .footer__contact-3 {
-    margin-left: 45px;
+  .footer .footer__color .footer__container .footer__contact-3 {
+    margin-right: 10px;
+  }
+  .footer .footer__color .footer__container .footer__contact-4 {
+    margin-right: 35px;
+  }
+  /* Information for document */
+  .footer__company {
+    padding: 30px;
+  }
+  .footer__company a {
+    padding: 10px;
   }
 }
 @media (max-width: 992px) {
-  .content .footer {
-    padding: 40px 0;
+  .footer {
     margin: 0 auto;
+    /* Information for document */
   }
-  .content .footer .footer__container {
+  .footer .footer__color .footer__container {
     max-width: min(396px, 100%);
     margin: 0 auto;
   }
-  .content .footer .footer__container .footer__contact {
+  .footer .footer__color .footer__container .footer__contact {
     justify-content: space-between;
     align-items: center;
+    width: 396px;
     margin: 0 auto;
+    padding: 15px 15px;
+    /* Footer contact`s */
   }
-  .content .footer .footer__container .footer__contact img {
-    width: 85px;
+  .footer .footer__color .footer__container .footer__contact img {
     height: 60px;
   }
-  .content .footer .footer__container .footer__contact h2 {
-    font: bold 18px "Open Sans", sans-serif;
+  .footer .footer__color .footer__container .footer__contact h2 {
+    font: bold 16px "Open Sans", sans-serif;
     margin: 8px 0 6px 0;
   }
-  .content .footer .footer__container .footer__contact p {
-    font: 14px "Open Sans", sans-serif;
+  .footer .footer__color .footer__container .footer__contact p {
+    font: 12px "Open Sans", sans-serif;
   }
-  .content .footer .footer__container .footer__contact-1 {
-    margin: 0;
-    padding: 0 12px 12px 12px;
+  .footer .footer__color .footer__container .footer__contact-1 {
+    margin-left: 20px;
+    padding: 10px;
   }
-  .content .footer .footer__container .footer__contact-2 {
-    margin: 0;
-    padding: 0 12px 12px 12px;
+  .footer .footer__color .footer__container .footer__contact-2 {
+    margin-right: 28px;
+    padding: 10px;
   }
-  .content .footer .footer__container .footer__contact-3 {
-    padding: 5px 5px;
-    margin: 0 9px 0 12px;
+  .footer .footer__color .footer__container .footer__contact-3 {
+    padding: 10px;
+    margin-right: 0px;
+    margin-left: 8px;
   }
-  .content .footer .footer__container .footer__contact-4 {
-    text-align: center;
-    width: 140px;
-    margin: 0 25px;
-    margin-top: 10px;
-    padding: 0 5px;
+  .footer .footer__color .footer__container .footer__contact-4 {
+    margin-right: 8px;
+    padding: 10px;
+  }
+  .footer .footer__company {
+    padding: 25px;
+  }
+  .footer .footer__company a {
+    padding: 8px;
   }
 }
 @media (max-width: 396px) {
-  .content .footer {
-    padding: 40px 0;
+  .footer {
+    padding-top: 0;
+    margin: -12px auto 0 auto;
+    /* Information for document */
   }
-  .content .footer .footer__container {
+  .footer .footer__color .footer__container {
     max-width: 320px;
+    margin: 0 auto;
+    /* Footer contact`s */
   }
-  .content .footer .footer__container .footer__contact {
+  .footer .footer__color .footer__container .footer__contact {
     justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    margin: 0 auto;
+    padding: 23px 15px;
   }
-  .content .footer .footer__container .footer__contact img {
-    width: 85px;
-    height: 60px;
+  .footer .footer__color .footer__container .footer__contact img {
+    width: 46px;
+    height: 46px;
   }
-  .content .footer .footer__container .footer__contact h2 {
+  .footer .footer__color .footer__container .footer__contact h2 {
     font: bold 16px "Open Sans", sans-serif;
-    margin: 6px 0 6px 0;
+    margin: 4px 0 2px 0;
   }
-  .content .footer .footer__container .footer__contact p {
+  .footer .footer__color .footer__container .footer__contact p {
     font: 12px "Open Sans", sans-serif;
   }
-  .content .footer .footer__container .footer__contact-1 {
-    margin: 0 3px 0 7px;
-    padding: 0 0 10px 0;
+  .footer .footer__color .footer__container .footer__contact-1 {
+    margin-left: 10px;
+    padding: 10px;
   }
-  .content .footer .footer__container .footer__contact-2 {
-    margin: 0 7px 0 3px;
-    padding: 0 0 10px 0;
+  .footer .footer__color .footer__container .footer__contact-2 {
+    margin-left: 0;
+    margin-right: 16px;
+    padding: 10px;
   }
-  .content .footer .footer__container .footer__contact-3 {
-    padding: 5px 5px;
-    margin: 0 5px 0 10px;
+  .footer .footer__color .footer__container .footer__contact-3 {
+    padding: 10px 5px;
+    margin: 0;
   }
-  .content .footer .footer__container .footer__contact-4 {
-    text-align: center;
-    width: 120px;
-    margin: 0 15px;
-    margin-top: 10px;
-    padding: 0 5px;
+  .footer .footer__color .footer__container .footer__contact-3 img {
+    width: 30px;
+  }
+  .footer .footer__color .footer__container .footer__contact-4 {
+    margin-right: 0;
+    padding: 10px 5px;
+  }
+  .footer .footer__company {
+    padding: 22px;
+  }
+  .footer .footer__company a {
+    font: 14px "Open Sans", sans-serif;
+    padding: 6px;
   }
 }

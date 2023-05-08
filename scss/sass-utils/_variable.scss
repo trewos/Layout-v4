@@ -1,23 +1,62 @@
-/* Header */
+/* Color */
+$white: #ffffff;
+$white-2: #f7f7f7;
+$gray: #c3c3c3;
+$blue: #3498db;
+$light-blue: #337ab7;
+$red: red;
+$hover-menu: #eeeeee;
+$course-color: #43a0de;
+$black: #000000;
+
+/* Shadow */
 $shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-$list-menu: 10px 20px;
-$list-menu-small: 10px 15px;
-/* Font for all Layout */
+$input-shadow: 0 1px 1px rgba(0, 0, 0, 0.25) inset;
+$focus-input-shadow: 0 0 5px rgba(0, 0, 255, 0.25);
+
+/* Font */
+/* Standart font */
+$font-big: 22px "Open Sans", sans-serif;
+$font-comment: 20px "Open Sans", sans-serif;
 $font: 16px "Open Sans", sans-serif;
+$font-bold: bold 16px "Open Sans", sans-serif;
 $font-small: 14px "Open Sans", sans-serif;
-/* Letter-spacing standard value */
-$spacing: 1px;
-/* Burger-toggle */
-$burger-toggle: #ffffff;
-$burger-toggle-wight: 26px;
-$burger-toggle-height: 2px;
-/* Animation */
-$animation: all 0.3s ease 0.5s;
-/* Font for h in register */
+$font-smaller: 12px "Open Sans", sans-serif;
+
+/* Font h1 */
 $font-h1: bold 33px "Open Sans", sans-serif;
 $font-h1-small: 700 28px "Open Sans", sans-serif;
 $font-h1-smaller: 700 26px "Open Sans", sans-serif;
 $font-h1-mobile: 700 22px "Open Sans", sans-serif;
 $font-h2: bold 20px "Open Sans", sans-serif;
+$font-h2-bolder: bold 20px "Open Sans Bold", sans-serif;
+$font-h2-bolder-smaller: bold 18px "Open Sans Bold", sans-serif;
 $font-h1-course: bold 22px "Open Sans", sans-serif;
-$font-h2-course: bold 20px "Open Sans", sans-serif;
+
+/* Font h2 */
+$font-h2-bigger: 700 28px "Open Sans", sans-serif;
+$font-h2-big: bold 22px "Open Sans", sans-serif;
+$font-h2: bold 20px "Open Sans", sans-serif;
+$font-h2-small: bold 18px "Open Sans", sans-serif;
+$font-h2-bolder: bold 20px "Open Sans Bold", sans-serif;
+$font-h2-bolder-smaller: bold 18px "Open Sans Bold", sans-serif;
+
+/* Font for application button */
+$font-application: bold 14px "Open Sans", sans-serif;
+
+/* Animation */
+$animation: all 0.3s ease 0.5s;
+
+/* Burger-toggle */
+$burger-toggle: $white;
+$burger-toggle-wight: 26px;
+$burger-toggle-height: 2px;
+
+/* List padding */
+
+$list-menu: 10px 20px;
+$list-menu-small: 10px 15px;
+
+/* Letter-spacing standard value */
+$spacing: 1px;
+

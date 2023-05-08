@@ -1,3 +1,5 @@
+/* Course slider */
+
 @import "scss/components/slider-dots";
 
 .course {
@@ -10,8 +12,7 @@
     margin: 0 auto;
 
     & .course__block {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       align-items: center;
       padding: 0 15px;
 
@@ -41,22 +42,21 @@
         }
 
         .slick-slide {
-          display: flex;
-          flex-direction: column;
+          @include flex-column;
           align-items: center;
           text-align: center;
 
           .course__item-title {
-            font: $font-h1-course;
+            font: $font-h1-mobile;
             padding: 18px 0;
             margin-bottom: 30px;
             letter-spacing: 0.068em;
-            border-bottom: 1px solid #43a0de;
+            border-bottom: 1px solid $course-color;
           }
 
           .course__item-description {
             font: $font;
-            color: #c3c3c3;
+            color: $gray;
             line-height: 25px;
             padding: 0 32px;
           }
@@ -65,6 +65,8 @@
     }
   }
 }
+
+/* Adaptive for course slider */
 
 @media (max-width: 1440px) {
   .content {
@@ -93,16 +95,16 @@
           .course__item {
             .slick-slide {
               .course__item-title {
-                font: $font-h2-course;
+                font: $font-h2;
                 padding: 16px 0 14px 0;
                 margin-bottom: 24px;
                 letter-spacing: 0.034em;
-                border-bottom: 1px solid #43a0de;
+                border-bottom: 1px solid $course-color;
               }
 
               .course__item-description {
                 font: $font-small;
-                color: #c3c3c3;
+                color: $gray;
                 line-height: 24px;
                 padding: 0 28px;
               }
@@ -169,16 +171,16 @@
               padding: 0 40px;
 
               .course__item-title {
-                font: $font-h2-course;
+                font: $font-h2;
                 padding: 20px 0 10px 0;
                 line-height: 22px;
                 margin-bottom: 14px;
-                border-bottom: 1px solid #43a0de;
+                border-bottom: 1px solid $course-color;
               }
 
               .course__item-description {
                 font: $font-small;
-                color: #c3c3c3;
+                color: $gray;
                 line-height: 23px;
                 padding: 0 40px;
                 margin-bottom: 42px;
@@ -224,16 +226,16 @@
               padding: 0 15px;
 
               .course__item-title {
-                font: $font-h2-course;
+                font: $font-h2;
                 padding: 20px 0 5px 0;
                 line-height: 23px;
                 margin-bottom: 14px;
-                border-bottom: 1px solid #43a0de;
+                border-bottom: 1px solid $course-color;
               }
 
               .course__item-description {
                 font: $font-small;
-                color: #c3c3c3;
+                color: $gray;
                 line-height: 22px;
                 padding: 0;
                 margin-bottom: 42px;

@@ -1,88 +1,111 @@
+/* Footer */
+
 .footer {
-  padding: 20px 0;
+  padding-top: 20px;
   width: 100%;
+  margin-top: auto;
 
   .footer__color {
     display: flex;
     width: 100%;
-    background-color: #3498db;
+    background-color: $blue;
   }
-  .footer__container {
+
+  &__container {
     max-width: min(1250px, 100%);
     margin: 0 auto;
 
     .footer__contact {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       text-align: center;
-      padding: 24px 15px;
+      width: 1130px;
+      padding: 40px 15px;
+
+      /* Footer contact`s */
 
       & h2 {
-        font: bold 18px "Open Sans", sans-serif;
-        color: #ffffff;
+        font: $font-h2-small;
+        color: $white;
         margin: 8px 0 4px 0;
       }
 
       & p {
         font: $font-small;
-        color: #ffffff;
+        color: $white;
       }
 
       &-1 {
+        margin-left: 16px;
         padding: 0 15px;
-        margin-left: 65px ;
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         align-items: center;
       }
+
       &-2 {
+        margin-left: 42px;
         padding: 0 15px;
-        margin-left: 50px;
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         align-items: center;
       }
+
       &-3 {
-        margin-left: 50px;
+        margin-left: 24px;
         padding: 0 15px;
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         align-items: center;
       }
+
       &-4 {
         padding: 0 15px;
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         align-items: center;
       }
     }
   }
+
+  /* Information for document */
+
+  .footer__company {
+    @include flex-column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+    background-color: $white;
+
+    a {
+      padding: 12px;
+      color: $black;
+
+      &:first-of-type {
+        color: $blue;
+      }
+    }
+  }
 }
+
+/* Adaptive for footer */
+
 @media (max-width: 1250px) {
-  .content {
-
-    .footer {
-      padding: 55px 0;
-
+  .footer {
+    .footer__color {
       .footer__container {
         max-width: min(992px, 100%);
 
         .footer__contact {
+          width: 992px;
+
+          /* Footer contact`s */
 
           & img {
-            width: 85px;
-            height: 60px;
+            height: 55px;
           }
 
           & h2 {
-            font: bold 22px "Open Sans", sans-serif;
-            margin: 14px 0 6px 0;
-          }
-
-          & p {
-            font: $font-small;
+            margin: 6px 0 2px 0;
           }
 
           &-1 {
@@ -94,25 +117,33 @@
           }
 
           &-3 {
-            margin-left: 45px;
+            margin-right: 10px;
           }
 
           &-4 {
-
+            margin-right: 35px;
           }
         }
       }
     }
   }
+
+  /* Information for document */
+
+  .footer__company {
+    padding: 30px;
+
+    a {
+      padding: 10px;
+    }
+  }
 }
+
 @media (max-width: 992px) {
+  .footer {
+    margin: 0 auto;
 
-  .content {
-
-    .footer {
-      padding: 40px 0;
-      margin: 0 auto;
-
+    .footer__color {
       .footer__container {
         max-width: min(396px, 100%);
         margin: 0 auto;
@@ -120,101 +151,130 @@
         .footer__contact {
           justify-content: space-between;
           align-items: center;
+          width: 396px;
           margin: 0 auto;
+          padding: 15px 15px;
+
+          /* Footer contact`s */
 
           & img {
-            width: 85px;
             height: 60px;
           }
 
           & h2 {
-            font: bold 18px "Open Sans", sans-serif;
+            font: $font-bold;
             margin: 8px 0 6px 0;
           }
 
           & p {
-            font: 14px "Open Sans", sans-serif;;
+            font: $font-smaller;
           }
 
           &-1 {
-            margin: 0;
-            padding: 0 12px 12px 12px;
+            margin-left: 20px;
+            padding: 10px;
           }
 
           &-2 {
-            margin: 0;
-            padding: 0 12px 12px 12px;
+            margin-right: 28px;
+            padding: 10px;
           }
 
           &-3 {
-            padding: 5px 5px;
-            margin: 0 9px 0 12px;
-
+            padding: 10px;
+            margin-right: 0px;
+            margin-left: 8px;
           }
 
           &-4 {
-            text-align: center;
-            width: 140px;
-            margin: 0 25px;
-            margin-top: 10px;
-            padding: 0 5px;
+            margin-right: 8px;
+            padding: 10px;
           }
         }
       }
     }
+
+    /* Information for document */
+
+    .footer__company {
+      padding: 25px;
+
+      a {
+        padding: 8px;
+      }
+    }
   }
 }
+
 @media (max-width: 396px) {
+  .footer {
+    padding-top: 0;
+    margin: -12px auto 0 auto;
 
-  .content {
-
-    .footer {
-      padding: 40px 0;
-
+    .footer__color {
       .footer__container {
         max-width: 320px;
+        margin: 0 auto;
+
+        /* Footer contact`s */
 
         .footer__contact {
           justify-content: space-between;
+          align-items: center;
+          width: 320px;
+          margin: 0 auto;
+          padding: 23px 15px;
 
           & img {
-            width: 85px;
-            height: 60px;
+            width: 46px;
+            height: 46px;
           }
 
           & h2 {
-            font: bold 16px "Open Sans", sans-serif;
-            margin: 6px 0 6px 0;
+            font: $font-bold;
+            margin: 4px 0 2px 0;
           }
 
           & p {
-            font: 12px "Open Sans", sans-serif;;
+            font: $font-smaller;
           }
 
           &-1 {
-            margin: 0 3px 0 7px;
-            padding: 0 0 10px 0;
+            margin-left: 10px;
+            padding: 10px;
           }
 
           &-2 {
-            margin: 0 7px 0 3px;
-            padding: 0 0 10px 0;
+            margin-left: 0;
+            margin-right: 16px;
+            padding: 10px;
           }
 
           &-3 {
-            padding: 5px 5px;
-            margin: 0 5px 0 10px;
+            padding: 10px 5px;
+            margin: 0;
 
+            img {
+              width: 30px;
+            }
           }
 
           &-4 {
-            text-align: center;
-            width: 120px;
-            margin: 0 15px;
-            margin-top: 10px;
-            padding: 0 5px;
+            margin-right: 0;
+            padding: 10px 5px;
           }
         }
+      }
+    }
+
+    /* Information for document */
+
+    .footer__company {
+      padding: 22px;
+
+      a {
+        font: $font-small;
+        padding: 6px;
       }
     }
   }

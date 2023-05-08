@@ -1,14 +1,8 @@
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/OpenSans-Light.ttf') format('truetype'),
-  url('../fonts/OpenSans-Light.woff') format('woff'),
-  url('../fonts/OpenSans-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-}
-
+@import "scss/base/font";
 @import "scss/sass-utils/variable";
+@import "scss/sass-utils/mixins";
 @import "scss/base/nullstyle";
+@import "scss/components/slider-dots";
 @import "scss/layout/header";
 @import "scss/layout/content";
 @import "scss/layout/footer";

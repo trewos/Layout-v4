@@ -1,9 +1,12 @@
-$(document).ready(function() {
-    $('.header__burger').click(function(event) {
+/* Burger-menu click */
+$(document).ready(function () {
+    $('.header__burger').click(function (event) {
         $('.header__menu, .header__burger').toggleClass('active');
     });
 });
-$(document).ready(function(){
+
+/* Course slider */
+$(document).ready(function () {
     $('.course__item').slick({
         dots: $('.course__item > div').length > 3,
         arrows: false,
@@ -33,7 +36,9 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(function(){
+/* Comments slider */
+
+$(document).ready(function () {
     $('.comments__slider').slick({
         dots: true,
         infinite: true,
@@ -46,7 +51,9 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(function(){
+/* Mentors slider */
+
+$(document).ready(function () {
     $('.mentors__item').slick({
         dots: true,
         infinite: true,
@@ -130,6 +137,7 @@ function validateRegisterEmail() {
         return true;
     }
 }
+
 function validateRegisterCheckBox() {
     if (RegisterCheckBox.checked) {
         return true;
@@ -142,14 +150,30 @@ function validateForm() {
     const validName = validateRegisterName();
     const validLastname = validateRegisterLastname();
     const validEmail = validateRegisterEmail();
-    const  validPhone = validateRegisterPhone();
-    const  validChoise = validateRegisterChoise();
+    const validPhone = validateRegisterPhone();
+    const validChoise = validateRegisterChoise();
     const validCheckBox = validateRegisterCheckBox()
 
     return validName && validLastname && validChoise && validPhone && validEmail && validCheckBox;
 }
 
-document.querySelector('#register__submit').addEventListener('click', function(event) {
+document.querySelector('#register__submit').addEventListener('click', function (event) {
     if (!validateForm()) {
     }
 });
+
+/* Link header click */
+
+function smoothScroll(event, target) {
+    event.preventDefault();
+    const element = document.getElementById(target);
+    const offsetTop = element.offsetTop;
+    const offsetHeight = element.offsetHeight;
+    const windowHeight = window.innerHeight;
+    const distance = offsetTop - ((windowHeight - offsetHeight) / 2);
+    window.scroll({
+        top: distance,
+        left: 0,
+        behavior: 'smooth'
+    });
+}
