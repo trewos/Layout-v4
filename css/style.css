@@ -1844,6 +1844,21 @@ h6 {
   margin-top: auto;
   /* Information for document */
 }
+.footer .mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 400px;
+}
+.footer .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 400px;
+}
+.footer .gmap_iframe {
+  height: 400px !important;
+}
 .footer .footer__color {
   display: flex;
   width: 100%;
